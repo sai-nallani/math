@@ -1,0 +1,1217 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}  
+
+\usepackage{tikz}
+\begin{document}
+\textbf{1001. (\color{red}d0\color{black}, 2015 Paraguay MO, P1 of 5)} Alexa wrote the first 16 numbers of a sequence: \begin{equation*}1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10, 11, \dots\end{equation*} Then she continued following the same pattern, until she had 2015 numbers in total. What was the last number she wrote?
+
+\textbf{1316. (\color{red}d1\color{black}, Folklore)} Colour each natural number $n \in \mathbb{N}$ in one of two colours. Show that, for each $n \in \mathbb{N}$, there are natural numbers $a, b > n$ such that $a, b$ and $a + b$ are all the same colour.
+
+\textbf{1211. (\color{red}d1\color{black}, Folklore)} The numbers $1, 2,\, \dots, 100$ are written on a chalkboard. At each stage, Tony Wang picks two of the numbers $a$ and $b$ on the chalkboard, removes them, and replaces one of them with $a + b - 1$. He repeats this until there is only one number remaining. What is the remaining number?
+
+\textbf{1113. (\color{red}d1\color{black}, 2008 BMO1, P1 of 5)} Consider a standard $8 \times 8$ chessboard consisting of 64 small squares coloured in the usual pattern, so 32 are black and 32 are white. A \emph{zig-zag} path across the board is a collection of 8 white squares, one in each row, which meet at their corners. How many different zig-zag paths are there?
+
+\textbf{1064. (\color{red}d1\color{black}, 2017 Maclaurin Olympiad, P2 of 6)} There is a line of 9 equally spaced vertical dots, with a perpendicular line of 9 equally spaced horizontal dots such that they share their middle dot. How many triangles (with non-zero area) are there with each of the three vertices at one of the dots in the diagram?
+
+\textbf{1050. (\color{red}d1\color{black}, 2013 Austria Regional Competition, P1 of 4)} Suppose $2000 \le n \le  2010$. If we pick a positive divisor $d$ of $n$ uniformly at random, for which $n$ is the probability that $d \le 45$ the greatest?
+
+\textbf{903. (\color{red}d1\color{black}, 1985 Putnam, A1)} Determine, with proof, the number of ordered triples $(A_1, A_2, A_3)$ of sets which have the property that \begin{enumerate}\item{$A_1 \cup A_2 \cup A_3 = \{1,2,3,4,5,6,7,8,9,10\}$, and}\item{$A_1 \cap A_2 \cap A_3 = \emptyset$.}\end{enumerate} Express your answer in the form $2^a3^b5^c7^d$, where $a,b,c,d$ are non-negative integers.
+
+\textbf{847. (\color{red}d1\color{black}, 2014 UKMOG, P3 of 5)} A large whiteboard has 2014 $+$ signs and 2015 $-$ signs written on it. You are allowed to delete two of the symbols and replace them according to the following two rules.
+\begin{enumerate}
+        \item If the two deleted symbols are the same, then replace them by $+$.
+        \item If the two deleted symbols are different, then replace them by $-$.
+\end{enumerate}
+You repeat this until there is only one symbol left. Which symbol is it?
+
+\textbf{749. (\color{red}d1\color{black}, Combinatorial Reciprocal Principle)} If a set $S$ is partitioned into $k$ subsets, $S_{1}, S_{2}, \ldots, S_{k}$, and $S(x)$ denotes the set $x$ belongs to, then
+$$
+        \sum_{s \in S} \frac{1}{|S(x)|}=k
+$$
+
+\textbf{707. (\color{red}d1\color{black}, 2018 UK IMOK, C5)} In the expression below, three of the $+$ signs are changed into $-$ signs so that the following expression is equal to $100$:
+$$0+1+2+3+4+5+6+7+8+9+10$$
+$$+11+12+13+14+15+16+17+18+19+20.$$
+In how many ways can this be done?
+
+\textbf{693. (\color{red}d1\color{black}, Handshaking Lemma)} Tannie, Teeny, Tiny, Tony and Tuny all meet up in the Sahara dessert in the middle of New Zealand. They then make a bowl of Chinese noodle soup for each of the people in their proximity they are friends with (there is nobody else around). If friendship is always mutual (that is, if you are friends with someone, then they are friends with you), prove that the total number of bowls of noodle soup made is even.
+
+\textbf{679. (\color{red}d1\color{black}, Folklore)} On an $n\times n$ chessboard, how many ways can four different squares be selected so that the centres of these squares form the vertices of a rectangle, with sides parallel to the edges of the board?
+
+\textbf{560. (\color{red}d1\color{black}, 2015 UK IMOK, H5)} Some boys and girls are standing in a row, in some order, about to be photographed. All of them are facing the photographer. Each girl counts the number of boys to her left, and each boy counts the number of girls to his right.
+
+Let the sum of the numbers counted by the girls be $G$, and the sum of the numbers counted by the boys be $B$.
+
+Prove that $G=B$.
+
+\textbf{357. (\color{red}d1\color{black}, 2001 AMC 12 P16 of 25)} A spider has one sock and one shoe for each of its eight legs. In how many different orders can the spider put on its socks and shoes, assuming that on each leg the sock must be put on before the shoe?
+
+\textbf{1358. (\color{red}d2\color{black}, 2021 Argentina MO Level 1, P2 of 6)} On each Olimpiada Matematica Argentina lottery ticket there is a 9-digit number consisting of the digits $1$, $2$ and $3$. Each ticket is coloured either red, blue or green. It is known that, if the numbers of two lottery tickets differ in each of the 9 digits, then they are different colours. If ticket 122222222 is red, and ticket 222222222 is green, what colour is ticket 123123123?
+
+\textbf{1338. (\color{red}d2\color{black}, 2022 AMC 12B, P17 of 25, Adapted)} How many $4 \times 4$ arrays whose entries are $0$s and $1$s are there such that the row sums (the sum of the entries in each row) are $1,2,3,$ and $4$ in some order, and the column sums (the sum of the entries in each colum are also $1,2,3,$ and $4$ in some order? For example, the array
+$$ \begin{bmatrix}
+                1 & 1 & 1 & 0 \\
+                0 & 1 & 1 & 0 \\
+                1 & 1 & 1 & 1 \\
+                0 & 1 & 0 & 0
+        \end{bmatrix}$$
+satifies the condition.
+$\newline \newline$
+More generally, how many $n \times n$ arrays whose entries are $0$s and $1$s are there so that the row sums and column sums are $1,2,3, \dots, n$ in some order?
+
+\textbf{1331. (\color{red}d2\color{black}, 2022 AMC 12A, P19 of 25, Adapted)} Suppose that 13 cards are numbered $1,2,3,\dots,13$ are arranged in a row. The task is to pick them up in numerically increasing order, working repeatedly from left to right. In the example below, cards $1,2,3$ are picked up on the first pass, $4$ and $5$ on the second pass, $6$ on the third pass, $7,8,9,10$ on the fourth pass, and $11,12,13$ on the fifth pass.
+$
+$\begin{center}$
+        $\boxed{7}$ $\boxed{11}$ $\boxed{8}$ $\boxed{6}$ $\boxed{4}$ $\boxed{5}$ $\boxed{9}$ $\boxed{12}$ $\boxed{1}$ $\boxed{13}$ $\boxed{10}$ $\boxed{2}$ $\boxed{3}$ $\end{center}$
+$For how many of the $13!$ possible orderings of the cards will the $13$ cards be picked up in exactly two passes? $\newline$$\newline$
+        More generally, prove how many of the $n!$ possible orderings of the cards will $n$ cards be picked up in exactly two passes.
+
+        \textbf{1317. (\color{red}d2\color{black}, 2014 NZMO, P4 of 10)} Given \(2014\) points in the plane, no three of which are collinear, what is the minimum number of line segments that can be drawn connecting pairs of points in such a way that adding a single additional line segment of the same sort will always produce a triangle of three connected points?
+
+
+        \textbf{1220. (\color{red}d2\color{black}, 2019 HMMT Nov Gen, P3 of 10)} Katie has a fair 2019-sided die with sides labeled $1, \ldots , 2019.$ After each roll, she replaces her $n$-sided die with an $(n+ 1)$-sided die having the $n$ sides of her previous die and an additional side with the number she just rolled. What is the probability that Katie's 2019th roll is a 2019?
+
+        \textbf{1190. (\color{red}d2\color{black}, 1998 BMO1, P1 of 5)} A $5\times 5$ square is divided into 25 unit squares. One of the numbers $1, 2, 3, 4, 5$ is inserted into each unit square in such a way that each row, each column and each of the two long diagonals contain each of the five numbers once and only once. The sum of the four numbers in the four squares immediately below the diagonal from top left to bottom right is called the \emph{score}.\\Show that it is impossible for the score to be 20.\\What is the highest possible score?
+
+        \textbf{1163. (\color{red}d2\color{black}, Old French TST)} There are three colleges in a town. Each college has $n$ students. Any student of any college knows $n+1$ students of the other two colleges. Prove that it is possible to choose a student from each of the three colleges so that all three students would know each other.
+
+        \textbf{1094. (\color{red}d2\color{black}, 2020 Pumac Team Round Problem 1 of 15)} Consider a 2021-by-2021 board of unit squares. For some integer $k$, we say the board is tiled by $k$-by-$k$ squares if it is completely covered by (possibly overlapping) $k$-by-$k$ squares with their corners on the corners of the unit squares. What is the largest integer $k$ such that the minimum number of $k$-by-$k$ squares needed to tile the 2021-by-2021 board is exactly equal to 100?
+
+        \textbf{1086. (\color{red}d2\color{black}, Folklore)} Three integers $a, b, c$ are written on a blackboard. Then one of the integers is erased and replaced by the sum of the other two diminished by 1. This operation is repeated many times with the final result $17,1967,1983$. Could the initial numbers be
+        \begin{enumerate}
+                \item $2,2,2$?
+                \item $3,3,3$?
+        \end{enumerate}
+
+        \textbf{1079. (\color{red}d2\color{black}, 2017 AIME I, P7 of 15 (adapted))} Let $n$ be a nonnegative integer. For nonnegative integers $a$ and $b$ with $a + b \leq n$, let $T(a, b) = \tbinom{n}{a} \tbinom{n}{b} \tbinom{n}{a + b}$. Let $S$ denote the sum of all $T(a, b)$, where $a$ and $b$ are nonnegative integers with $a + b \leq n$. Prove that $S = \tbinom{3n}{n}$.
+
+        \textbf{1023. (\color{red}d2\color{black}, 2002 Flanders JMO, P3 of 4)} Is it possible to number the 8 vertices of a cube from 1 to 8 in such a way that the value of the sum on every edge is different?
+
+        \textbf{980. (\color{red}d2\color{black}, 2018 Polish Junior MO Round 1, P5 of 7)} Suppose the integers are each coloured either red, green or blue in such a way that, if $x, y$ are coloured differently, their sum $x + y$ is coloured red. Is it possible to colour it in this way while using all three colours at least once?
+
+        \textbf{960. (\color{red}d2\color{black}, Wythoff's game (1907))} A queen is at the square h7 on a chessboard. Amy and Bob take turns moving the queen left, down, or diagonally left-down at least 1 square. The player who moves it to a1 wins. Who has a winning strategy?
+
+        \textbf{939. (\color{red}d2\color{black}, Folklore)} Let $n \geq 2$ be a positive integer, and let $S = \{1, 2, \dots, n\}$. Find the number of non-decreasing functions $f:S \rightarrow S$ such that $|f(x) - f(y)| \leq |x - y|$.
+
+        \textbf{931. (\color{red}d2\color{black}, Folklore)} A collection $\mathcal{C}$ of subsets of $\{1, 2, \dots, n\}$ is called a \emph{chain} if $A, B \in \mathcal{C}$ implies that either $A \subset B$ or $B \subset A$. What is the largest possible chain, made up of subsets $\{1, 2, \dots, n\}$?
+
+        \textbf{882. (\color{red}d2\color{black}, 1989 Irish MO, P7 of 10)} Each of the $n$ members of a club is given a different item of information. They are allowed to share the information, but, for security reasons, only in the following way: A pair may communicate by telephone. During a telephone call only one member may speak. The member who speaks may tell the other member all the information s(he) knows. Determine the minimal number of phone calls that are required to convey all the information to each other.
+
+        \textbf{875. (\color{red}d2\color{black}, NIMO Winter 2014/2)} Determine, with proof, the smallest positive integer $c$ such that for any positive integer $n$, the decimal representation of the number $c^n + 2014$ has digits all less than $5$.
+
+        \textbf{833. (\color{red}d2\color{black}, 2021 MODSMO, P1 of 7)} In a grid of unit squares, a \emph{cucumber} is defined as a pair of unit squares which share a vertex but do not share a side. For which pairs of integers $(m, n)$ can an $m \times n$ rectangular grid of unit squares be tiled with cucumbers?
+
+        \textbf{813. (\color{red}d2\color{black}, 2021 HongKong TST, P1 of 4)} Let $S$ be a set of $2020$ distinct points in the plane. Let
+        \[M=\{P:P\text{ is the midpoint of }XY\text{ for distinct points }X,Y\text{ in }S\}.\]
+        Find the least possible value of the number of points in $M$.
+
+        \textbf{743. (\color{red}d2\color{black}, 2009/10 BMO1, P3 of 6)} Isaac attempts all six questions on an Olympiad paper in order. Each question is marked on a scale from 0 to 10. He never scores more in a later question than in any earlier question. How many different possible sequences of six marks can he achieve?
+
+        \textbf{722. (\color{red}d2\color{black}, 2015 UK IMOK, C6)} I have four identical black beads and four identical white beads.
+
+        Carefully explain how many different bracelets I can make using all the beads.
+
+        \textbf{623. (\color{red}d2\color{black}, 2020 IrMO, Q6 of 10)} Pat has a pentagon, each of whose vertices is coloured either red or blue. Once an hour, Pat recolours the vertices as follows.
+        \begin{itemize}
+                \item Any vertex whose two neighbours were the same colour for the last hour, becomes blue for the next hour.
+                \item Any vertex whose two neighbours were different colours for the last hour, becomes red for the next hour.
+        \end{itemize}
+        Show that there is at least one vertex which is blue after the first recolouring and remains blue for ever
+
+        \textbf{539. (\color{red}d2\color{black}, Folklore)} Consider all points in the $x-y$ plane whose coordinates $(x, y)$ are integers and $1 \leq x \leq 19,$ $1 \leq y \leq 4 .$ Each point is painted green, red or blue. Prove that there exists a rectangle with side parallel to the coordinate axes whose vertices are all of the same colour.
+
+        \textbf{462. (\color{red}d2\color{black}, Problem Solving Methods in Combinatorics, P2.1)} Prove that given 13 points in the plane with integer coordinates, you can select a triangle whose centroid has integer coordinates.
+
+        \textbf{449. (\color{red}d2\color{black}, Classic)} Prove that if a graph G has at least two vertices then G contains two vertices of the same degree.
+
+        \textbf{329. (\color{red}d2\color{black}, 1983 AIME P13)} For $\{1,2,3,\dots, n\}$ and each of its non-empty subsets a unique \emph{alternating sum} is defined as follows. Arrange the numbers in the subset in decreasing order and then, beginning with the largest, alternately add and subtract successive numbers. For example, the alternating sums for $\{1,2,3,6,9\}$ is $9-6+3-2+1=5$ and for $\{5\}$ it is simply $5$. Find the sum of all such alternating sums for a positive integer $n$.
+
+        \textbf{266. (\color{red}d2\color{black}, 2018 ToT Autumn Junior A-level Paper, Q2 of 7)} There are $2018$ people living on an island. Each person is one of: a knight, a knave, or a neither-knight-nor-knave. A knight always tells the truth, and a knave always lies. A neither-knight-nor-knave answers as the majority of people answered before him, or randomly, in the case that the numbers of $\textit{“Yes}$ and $\textit{“No"}$ answers are equal. Everyone on the island knows which of the three possibilities each person is. One day all $2018$ inhabitants of the island were arranged in a line and each in turn answered $\textit{“Yes”}$ or $\textit{“No”}$ to the same question:
+        \begin{center} $\textit{Are there more knights than knaves on the island?}$ \end{center}
+        The total number of $\textit{“Yes”}$ answers was $1009$ and everyone heard all the previous answers. Determine the maximum possible number of neither-knight-nor-knave people among the inhabitants of the island.
+
+        \textbf{79. (\color{red}d2\color{black}, 2017 Kosovo National Olympiad, Grade 11, Q3 of 4)} \(n\) teams participated in a basketball tournament, where each team played with each other team exactly one game. There was no tie. If in the end of the tournament the \(i\)-th team has \(W_i\) wins and \(L_i\) losses for \(1 \leq i \leq n\) prove that
+
+        \[\displaystyle \sum_{i=1}^n W_i^2 = \displaystyle \sum_{i=1}^n L_i^2.\]
+
+        \textbf{70. (\color{red}d2\color{black}, One of those "99% cannot solve" quizzes
+                (??))} Brainy is trying to create a jewelled string by following some rules. He begins with a ruby on a the string. With his string, he has 4 possible operations he could do:
+        \begin{enumerate}
+                \item He could add a sapphire gem to the end of the string.
+                \item He could make a copy of the string he has and add it on to the end of his initial string.
+                \item He could replace any three contiguous ruby gems with a sapphire.
+                \item He can remove any two consecutive sapphire.
+        \end{enumerate}
+        Is it possible to make the string have only a sapphire on it?
+
+        \textbf{44. (\color{red}d2\color{black}, 2006 Flanders MO, Q3 of 4)} A total of 60 elves and trolls are seated around a table. Trolls always lie, and elves always speak the truth, except when they make a little mistake. Everybody claims to sit between an elf and a troll, but exactly two elves made a mistake! How many trolls are there at the table?
+
+        \textbf{15. (\color{red}d2\color{black}, 2009 Russian MO (29th), Grade 11, Q1)} Some cities in a country are linked by roads, none of which intersect outside a city. Each city displays the shortest length of a trip (chain of roads) beginning in that city and passing through each of the other cities at least once. Prove that any two displayed lengths $a$ and $b$ satisfies $a \leq 1.5b$ and $b \leq 1.5a.$
+
+        \textbf{1325. (\color{red}d3\color{black}, 2009 Canadian MO, P 2 of 5)} Two circles of different radii are cut out of cardboard. Each circle is subdivided into 200 equal sectors. On each circle 100 sectors are painted white and the other
+        100 are painted black. The smaller circle is then placed on top of the larger circle, so that
+        their centers coincide. Show that one can rotate the small circle so that the sectors on
+        the two circles line up and at least 100 sectors on the small circle lie over sectors of the
+        same color on the big circle.
+
+        \textbf{1297. (\color{red}d3\color{black}, 2007 TOT Senior O Level, P4 of 5)} The audience chooses two of twenty-nine cards, numbered from 1 to 29 respectively. The assistant of a magician chooses two of the remaining twenty-seven cards, and asks a member of the audience to take them to the magician, who is in another room. The two cards are presented to the magician in an arbitrary order. By an arrangement with the assistant beforehand, the magician is able to deduce which two cards the audience has chosen only from the two cards he receives. Explain how this may be done.
+
+        \textbf{1290. (\color{red}d3\color{black}, 2015 TOT Senior O Level, P4 of 5)} In a country there are 100 cities. Every two cities are connected by a
+        direct flight (in both directions). Each flight costs a positive (not necessarily integer)
+        number of doubloons. The flights in both directions between two given cities are of
+        the same cost. The average cost of a flight is 1 doubloon. A traveller plans to visit
+        any $m$ cities for $m$ flights, starting and ending at his native city (which must be one
+        of these $m$ cities). Can the traveller always fulfil his plans given that he can spend at
+        most $m$ doubloons if
+        \begin{enumerate}
+                \item $m$ = 99;
+                \item $m$ = 100?
+        \end{enumerate}
+
+        \textbf{1275. (\color{red}d3\color{black}, ACPS 6.4.6)} Find the number of subsets of \(\{1,2,\ldots,n\}\) that contain no two consecutive elements of \(\{1,2,\ldots,n\}\).
+
+        \textbf{1269. (\color{red}d3\color{black}, 2021 ToT Senior A Level, P2 of 7)} There was a rook at some square of a $10 \times 10$ chessboard. At each turn it moved to a square
+        adjacent by side. It visited each square exactly once. Prove that for each main diagonal (the
+        diagonal between the corners of the board) the following statement is true: in the rook's path
+        there were two consecutive steps at which the rook first stepped away from the diagonal and
+        then returned back to the diagonal.
+
+        \textbf{1248. (\color{red}d3\color{black}, 2016 HMMT Feb Combi, P5 of 10)} Let $a, b, c, d, e, f$ be integers selected from the set $\{1, 2, \ldots , 100\}$, uniformly and at random with
+        replacement. Set
+        \[M = a + 2b + 4c + 8d + 16e + 32f.\]
+        What is the expected value of the remainder when $M$ is divided by 64?
+
+        \textbf{1246. (\color{red}d3\color{black}, 1999 BMO1, P5 of 5)} Consider all functions $f$ from the positive integers to the positive integers such that \begin{enumerate}\item {for each positive integer $m$, there is a unique positive integer $n$ such that $f(n) = m$;}\item {for each positive integer $n$, we have \begin{equation*}f(n+1) \text{ is} \textbf{ either } 4f(n)-1 \textbf{ or } f(n)-1.\end{equation*}}\end{enumerate}Find the set of positive integers $p$ such that $f(1999) = p$ for some function $f$ with properties (i) and (ii).
+
+        \textbf{1234. (\color{red}d3\color{black}, 2019 HMIC, P2 of 5)} Annie has a permutation $(a_1, a_2, \ldots , a_{2019})$ of $S = \{1, 2, \ldots , 2019\},$ and Yannick wants to guess her
+        permutation. With each guess Yannick gives Annie an $n$-tuple $(y_1, y_2, . . . , y_{2019})$ of integers in $S$, and
+        then Annie gives the number of indices $i \in S$ such that $a_i = y_i$. Show that Yannick can always guess Annie's permutation with at most 24000 guesses.
+
+        \textbf{1233. (\color{red}d3\color{black}, PSS, Chapter 2, P27)} The vertices of a regular $2n$-gon, $A_1 , \cdots , A_{2n}$ are partitioned into $n$ pairs. Prove that, if $n = 4m + 2$ or $n = 4m + 3$, then two pairs of vertices are endpoints of congruent segments.
+
+        \textbf{1219. (\color{red}d3\color{black}, PST 13.0.12)} Find the number of \(k\)-tuples \((S_1, S_2, \ldots, S_k)\) satisfying \[S_1 \subseteq S_2 \subseteq \cdots \subseteq S_k \subseteq \{ 1,2, \ldots, n\}.\]
+
+        \textbf{1213. (\color{red}d3\color{black}, 2006 CMO, P1 of 5)} Let $f(n, k)$ be the number of ways of distributing $k$ candies to $n$ children so that each child receives at most 2 candies.
+        For example, if $n = $3, then $f(3, 7) = 0$, $f(3, 6) = 1$ and $f(3, 4) = 6.$
+
+        Determine the value of
+        \[
+                f(2006, 1) + f(2006, 4) + \cdots + f(2006, 4009) + f(2006, 4012) .
+        \]
+
+        \textbf{1206. (\color{red}d3\color{black}, 2017 USAMTS, Round 1 P2 of 5)} A tower of height $h$ is a stack of contiguous rows of squares of height $h$ such that
+
+        \begin{enumerate}
+
+                \item the bottom row of the tower has h squares,
+
+                \item each row above the bottom row has one fewer square than the row below it, and within each row the squares are contiguous,
+
+                \item the squares in any given row all lie directly above a square in the row below.
+
+        \end{enumerate}
+
+
+
+        A tower is called balanced if when the squares of the tower are colored black and white in a checkerboard fashion, the number of black squares is equal to the number of white squares. For example, the figure above shows a tower of height 5 that is not balanced, since there are 7 white squares and 8 black squares.
+
+
+
+        How many balanced towers are there of height 2016?
+
+
+        \textbf{1142. (\color{red}d3\color{black}, 1995 Dutch MO, P1 of 5)} A kangaroo jumps from lattice point to lattice point in the coordinate plane. It can make only two kinds of jumps:
+        \begin{itemize}
+                \item Jump A: here it jumps $1$ to the right (in the positive \(x\)-direction) and $3$ up (in the positive \(y\)-direction).
+                \item Jump B: here it jumps $2$ to the left and $4$ down.
+        \end{itemize}
+        \begin{enumerate}
+                \item The kangaroo's starting position is the origin \((0,0)\). Show that the kangaroo can jump to the point \((19,95)\) and calculate the number of jumps it needs to do this.
+                \item The starting position is now the point \((1,0)\). Show that it can never reach the point \((19,95)\).
+                \item The starting position of the kangaroo is again the origin \((0,0)\). To which points \((m,n)\) with \(m,n \geq 0\) can the kangaroo jump and to which can it not?
+        \end{enumerate}
+
+        \textbf{1136. (\color{red}d3\color{black}, 2022 ARML Local Indiv P 6 of 10)} There are $11$ islands in the CaribARML Sea. Some island pairs are connected to each other by
+
+        bridges and other island pairs are not. For every set of three CaribARML islands, either they
+
+        are all connected to each other by a bridge or exactly one pair of them is. Compute the least
+
+        possible number of bridges in the CaribARML islands.
+
+        \textbf{1128. (\color{red}d3\color{black}, 2015 Serbian TST, P3)} There are 2015 prisoners each with a hat coloured in one of 5 colours.
+        One day, the guards order all of the prisoners to line up. The prisoners do so, and each prisoner can see the hats of all prisoners behind and ahead of them in the line.
+
+        A guard asks the prisoners one by one `do you know the colour of your hat?'. If the prisoner says \emph{no}, they are killed. If they say \emph{yes}, they are then asked to say the colour of their hat. If they answer correctly, they are set free, and otherwise they are killed.
+
+        Each of the prisoners can hear whether another prisoner said \emph{yes} or \emph{no} and can see whether the prisoner was killed, but they cannot hear the colour guessed if the prisoner had answered \emph{yes}.
+
+        All of the prisoners are perfectly logical and altruistic, and they are able to think of a strategy before they line up. What is the largest number of prisoners we can guarantee survive?
+
+
+        \textbf{1093. (\color{red}d3\color{black}, 2010 China Round 2, Test 2, P4 of 6)} The code system of a new ``MO lock'' is a regular $n$-gon, with each vertex labelled either 0 or 1 and coloured red or blue. It is known that for any adjacent vertices, either their numbers or colours coincide. Find the number of all possible codes.
+
+        \textbf{1010. (\color{red}d3\color{black}, 2020 CHMMC Proof Round, P1 of 6)} Let \(n\) be a positive integer, $K = \{1, 2, . . . , n\}$, and $\sigma : K \to K$ be a function with the property that $\sigma(i) = \sigma(j)$ if and only if $i = j$ (in other words, $\sigma$ is a \emph{bijection}). Show that there is a positive integer $m$ such that
+        \[
+                \underbrace{\sigma(\sigma(\ldots \sigma(i)\ldots))}_{m\text{ times}} = i
+        \]
+        for all $i \in K$.
+
+        \textbf{1003. (\color{red}d3\color{black}, 2015 NZ Camp Selection, P9 of 9)} Consolidated Megacorp is planning to send a salesperson to Elbonia who needs to visit every town there. It is possible to travel between any two towns of Elbonia directly either by barge or by mule cart (the same type of travel is available in either direction, and these are the only types of travel available). Show that it is possible to choose a starting town so that the salesperson can complete a round trip visiting each town exactly once and returning to her starting point, while changing the type of transportation used at most one time (this is desirable, since it's hard to arrange for the merchandise to be transferred from barge to cart or vice versa).
+
+        \textbf{1002. (\color{red}d3\color{black}, 2021 British MO, P3 of 6)} For each integer $0 \leq n \leq 11$, Eliza has exactly three identical pieces of gold that weigh $2^{n}$ grams. In how many different ways can she form a pile of gold weighing 2021 grams?
+
+        \emph{(Two piles are different if they contain different numbers of gold pieces of some weight. The arrangement of the pieces in the piles is irrelevant.)}
+
+        \textbf{989. (\color{red}d3\color{black}, 2021 ICMC Round 1, P2 of 6)} Find all integers $n$ for which there exists a table with $n$ rows, 2022 columns, and integer entries, such that subtracting any two rows entry-wise leaves every remainder modulo 2022 .
+
+        \textbf{932. (\color{red}d3\color{black}, Iran 1996)} The top and bottom edges of a chessboard are identified together, as are the left and right edges, yielding a torus. Find the maximum number of knights which can be placed so that no two attack each other.
+
+        \textbf{911. (\color{red}d3\color{black}, NIMO 5.6)} Tom has a scientific calculator.
+        Unfortunately,
+        all keys are broken except for one row:
+        \verb$1$, \verb$2$, \verb$3$, \verb$+$ and \verb$-$.
+        Tom presses a sequence of $5$ random keystrokes;
+        at each stroke, each key is equally likely to be pressed.
+        The calculator then evaluates the entire expression,
+        yielding a result of $E$.
+        Find the expected value of $E$.
+
+        (Note: Negative numbers are permitted, so \verb$13-22$ gives $E = -9$.
+        Any excess operators are parsed as signs, so \verb$-2-+3$ gives $E=-5$
+        and \verb$-+-31$ gives $E = 31$.
+        Trailing operators are discarded, so \verb$2++-+$ gives $E=2$.
+        A string consisting only of operators, such as \verb$-++-+$, gives $E=0$.)
+
+        \textbf{820. (\color{red}d3\color{black}, 2020 ASC, P2 of 5)} Let $m$ and $n$ be integers greater than 1 . We would like to write each of the numbers $1,2,3, \ldots, m n$ in the $m n$ unit squares of an $m \times n$ chessboard, one number per square, according to the following rules.
+        \begin{itemize}
+                \item Each pair of consecutive numbers must be written within one row or column of the chessboard.
+                \item No three consecutive numbers can be written within one row or column of the chessboard.
+        \end{itemize}
+        For which values of $m$ and $n$ is this possible?
+
+        \textbf{799. (\color{red}d3\color{black}, 2013 AMO, P6 of 8)} There are $2013$ people at a party. Among any $3$ of these people the number of pairs of people who know each other is odd. Prove that there are $1007$ people who all know each other.
+
+        \textbf{758. (\color{red}d3\color{black}, 2019/20 BMO1, P5 of 6)} Six children are evenly spaced around a circular table. Initially, one has a pile of $n>0$ sweets in front of them, and the others have nothing. If a child has at least four sweets in front of them, they may perform the following move: eat one sweet and give one sweet to each of their immediate neighbours and to the child directly opposite them. An arrangement is called \textit{perfect} if there is a sequence of moves which results in each child having the same number of sweets in front of them. For which values of $n$ is the initial arrangement perfect?
+
+        \textbf{757. (\color{red}d3\color{black}, 2012 EGMO, P2 of 8)} Let $n$ be a positive integer. Find the greatest possible integer $m$, in terms of $n$, with the following property: a table with $m$ rows and $n$ columns can be filled with real numbers in such a manner that for any two different rows $\left[ {{a_1},{a_2},\ldots,{a_n}}\right]$ and $\left[ {{b_1},{b_2},\ldots,{b_n}} \right]$ the following holds: \[\max\left( {\left| {{a_1} - {b_1}} \right|,\left| {{a_2} - {b_2}} \right|,...,\left| {{a_n} - {b_n}} \right|} \right) = 1\]
+
+        \textbf{736. (\color{red}d3\color{black}, Hamiltonian Cycle in the Hyper-cube)} Graph $G$ has $2^{1000}$ vertices, and each vertex is labelled with a distinct binary string of length $1000.$ Two vertices are joined by an edge if and only if their labels differ in exactly one position. Show that by walking along some of the edges you can start at some vertex, visit every other vertex exactly once, and end up back at the vertex at which you started.
+
+        \textbf{688. (\color{red}d3\color{black}, Two-Player Nim)} Tony and Wang are sharing a bowl of Chinese noodle soup which contains $X$ noodles. They take turns eating any number from $1$ to $D$ of the noodles, with Tony getting first pick. They decided whoever ends up eating the last noodle does not drink the leftover soup at the bottom of the bowl (and the other person does because the soup at the bottom is delicious). For which pairs $(X, D)$ can Tony make sure he can drink the leftover soup at the bottom of the bowl?
+
+        \textbf{681. (\color{red}d3\color{black}, 1999 Russia)} In a certain finite nonempty school, every boy likes at least one girl. Prove that we can find a set $S$ of strictly more than half the students in the school such that each boy in S likes an odd number of girls in $S$.
+
+        \textbf{631. (\color{red}d3\color{black}, A conversation with my sister)} After escaping from a box of Avalon, Percival and Merlin have discovered the joys of modern technology. Percival is playing the inane phone game "I Love Hue" in which the end user is presented with an arrangement of distinctly coloured squares, some of which are in fixed positions (marked by a little black dot in the centre of the square), and others which can be moved. Each turn, Percival taps two distinct movable squares which then swap positions. The game ends when all the movable squares are in the correct final position and Percival's goal is to reach this state in the least possible number of turns. Merlin, who has been pondering the game for a few moments, remarks to Percival that if on each turn he moves one square to its final position then he will necessarily end the game in the least number of turns possible. Percival doesn't care and ignores him, but for the purpose of this problem we will say that he claims this is obviously wrong. Who is correct?
+
+        \textbf{625. (\color{red}d3\color{black}, 2005 AMO, P8 of 8)} In an $n \times n$ array, each of $n$ distinct symbols occurs exactly $n$ times. Show that there is a row or column in the array with at least $\sqrt{n}$ distinct symbols.
+
+        \textbf{546. (\color{red}d3\color{black}, 1999 Spring Mathematics Tournament Kazanlâk, P8.3)} Given $n$ points on a circle denoted consecutively $A_{1}, A_{2}, \ldots, A_{n}$ with $n \geq 3$.
+        Initially 1 is written at $A_{1}$ and 0 at the remaining points. The following operation is allowed:
+        choose a point $A_{i}$ where a 1 is written and replace the numbers $a, b$ and $c$ written at the points $A_{i-1}, A_{i}$ and $A_{i+1}$ by $1-a, 1-b$ and $1-c$ respectively. (Here $A_{0}$ means $A_{n}$
+        and $A_{n+1}$ means $A_{1}$).
+        \begin{enumerate}
+                \item If $n=1999,$ is it possible to have a 0 in all points after performing the described operation a finite number of times?
+                \item Find all values of $n$ such that it is not possible to have 0 in all points after a finite
+                      number of operations.
+        \end{enumerate}
+
+        \textbf{540. (\color{red}d3\color{black}, 2007 China Western Mathematical Olympiad, Day 2 Q4)} A circular disk is partitioned into $ 2n$ equal sectors by $ n$ straight lines through its center. Then, these $ 2n$ sectors are colored in such a way that exactly $ n$ of the sectors are colored in blue, and the other $ n$ sectors are colored in red. We number the red sectors with numbers from $ 1$ to $ n$ in counter-clockwise direction (starting at some of these red sectors), and then we number the blue sectors with numbers from $ 1$ to $ n$ in clockwise direction (starting at some of these blue sectors).
+
+        Prove that one can find a half-disk which contains sectors numbered with all the numbers from $ 1$ to $ n$ (in some order). (In other words, prove that one can find $ n$ consecutive sectors which are numbered by all numbers $ 1$, $ 2$, ..., $ n$ in some order.)
+
+
+        \textbf{532. (\color{red}d3\color{black}, 1987 IMO, P1 of 6)} Let $p_n(k)$ be the number of permutations of the set $\{1,2,3,\ldots,n\}$ which have exactly $k$ fixed points. Prove that $\sum_{k=0}^nk p_n(k)=n!$.
+
+        \textbf{526. (\color{red}d3\color{black}, X+Y (2014 Movie))} In each of the $4n^2$ squares of a $2n \times 2n$ board is a train painted with one of $4$ colours. Given that each $2 \times 2$ block of squares contains a train of each of the $4$ colours, show that the $4$ corner squares of the board contain trains of different colours.
+
+        \textbf{513. (\color{red}d3\color{black}, 1997 Spanish Mathematical Olympiad, P6 of 6)} The exact quantity of gas needed for a car to complete a single loop around a track is distributed among $n$ containers placed along the track. Prove that there exists a position starting at which the car, beginning with an empty tank of gas, can complete a loop around the track without running out of gas. The tank of gas is assumed to be large enough.
+
+        \textbf{512. (\color{red}d3\color{black}, X+Y (2014 Movie))} A person has 10 cards on a table. At each move they can take a face-up card and flip both it and the card to its right. Prove they can only make a finite number of moves.
+
+        \textbf{511. (\color{red}d3\color{black}, 2002 Putnam, A3)} Let $n \geq 2$ be an integer and $T_{n}$ be the number of nonempty subsets $S$ of $\{1,2,3, \ldots, n\}$ with the property that the average of the elements of $S$ is an integer. Prove that $T_{n}-n$ is always even.
+
+        \textbf{457. (\color{red}d3\color{black}, 2020 USAJMO, P1 of 6)} Let $n \geq 2$ be an integer. Carl has $n$ books arranged on a bookshelf. Each book has a height and a width. No two books have the same height, and no two books have the same width. Initially, the books are arranged in increasing order of height from left to right. In a move, Carl picks any two adjacent books where the left book is wider and shorter than the right book, and swaps their locations. Carl does this repeatedly until no further moves are possible. Prove that regardless of how Carl makes his moves, he must stop after a finite number of moves, and when he does stop, the books are sorted in increasing order of width from left to right.
+
+
+        \textbf{443. (\color{red}d3\color{black}, 2014 BMO2, P1 of 4)} Every diagonal of a regular polygon with 2014 sides is coloured in one of $n$ colours. Whenever two diagonals cross in the interior, they are of different colours. What is the minimum value of $n$ for which this is possible?
+
+        \textbf{430. (\color{red}d3\color{black}, Assignment from last week)} For each graph $G$ construct a new graph $G'$ such that $G'$ has a Hamiltonian Cycle (a path which passes through all vertices exactly once and starts and ends at the same vertex) if and only if $G$ has a Hamiltonian Path (a path which passes through all vertices exactly once).
+
+        \textbf{429. (\color{red}d3\color{black}, Kruskal's Algorithm)} Each edge of a complete graph $G$ on $n$ vertices is assigned a distinct positive real weight. A spanning tree of a graph is a connected acyclic subgraph using all vertices of the graph. Diligent Dave and Lazy Larry are trying to find the minimum possible total weight of the edges among all spaning trees of the graph $G.$ Diligent Dave checks all spanning trees and records the minimum total weight. Lazy Larry can't be bothered to check all cases so he implements the following algorithm:
+        \begin{enumerate}
+                \item He writes down the edges of the graph in increasing order of weight from left to right.
+                \item Starting from the edge with lowest weight and working from left to right he checks if the addition of that edge to the edges already chosen would form a cycle. If no cycle is formed he chooses this edge otherwise he discards it and moves onto the next edge in the list.
+                \item When he has reached the end of the list he adds up the weight of all edges chosen so far and records this number.
+        \end{enumerate}
+        Show that the set of edges which Lazy Larry has at the end of this process forms a spanning tree.
+        Is it possible for Diligent Dave to record a lower answer than Lazy Larry?
+
+        \textbf{413. (\color{red}d3\color{black}, 2019 Irish EGMO TST, Q10)} Let \(S\) be a set of \(6 n\) points on a line. \(4 n\) of these points are painted blue and the other \(2 n\) points are painted
+        green.
+
+        Prove that there exists a line segment that contains exactly \(3 n\) points from \(S,\) such that \(2 n\) of them are blue and the other \(n\) are green.
+
+        \textbf{385. (\color{red}d3\color{black}, 1972 IMO, P1 of 6)} Prove that from a set of ten distinct two-digit numbers (in the decimal system), it is possible to select two disjoint subsets whose members have the same sum.
+
+        \textbf{372. (\color{red}d3\color{black}, 2020 AMO, P2 of 8)} Amy and Bec play the following game. Initially, there are three piles, each containing 2020 stones. The players take turns to make a move, with Amy going first. Each move consists of choosing one of the piles available, removing the unchosen pile(s) from the game, and then dividing the chosen pile into 2 or 3 non-empty piles. A player loses the game if they are unable to make a move. \\
+        Prove that Bec can always win the game, no matter how Amy plays.
+
+        \textbf{330. (\color{red}d3\color{black}, 2016 Singapore MO, Jnr. Rnd. 2, Q4 of 5)} A group of tourists gets on 10 buses in the outgoing trip. The same group of tourists get on 8 buses in the return trip. Assuming each bus carries at least 1 tourist, prove that there are at least 3 tourists such that each of them has taken a bus in the return trip that has more people than the bus he has taken in the outgoing trip.
+
+        \textbf{281. (\color{red}d3\color{black}, 1991 CMO, P5 of 5)} In the figure, the side length of the large equilateral triangle is 3, and $f(3)$, the number of parallelograms bounded by the sides in the grid, is 15. For the general analogous situation, find a formula for $f(n)$, the number of parallograms, for a triangle of side length $n$.
+
+        \textbf{238. (\color{red}d3\color{black}, IMC Day 2, P2 of 5)} Two hundred students participated in a mathematical contest. They had 6 problems to solve. It is known that each problem was correctly solved by at least 120 participants. Prove that there must be two participants such that every problem was solved by at least one of these two students.
+
+        \textbf{210. (\color{red}d3\color{black}, 2001 Putnam, A1   )} Consider a set $S$ and a binary operation $*$, i.e. for each $a,b\in S$, $a*b\in S$. Assume $(a*b)*a=b$ for all $a,b\in S$. Prove that $a*(b*a)=b$ for all $a,b \in S$.
+
+        \textbf{198. (\color{red}d3\color{black}, 2003 Italian MO, P2 of 6        )} A museum has the shape of an \(n \times n (n > 1)\) square divided into \(n^2\) rooms in the shape of a unit square. Between any two rooms sharing an edge, there is a door. A night guardian wants to organize an inspection journey through the museum according to the following rules: He starts from some room and, whenever he enters a room, stays there for exactly one minute and then proceeds to another room. He is allowed to enter a room more than once, but at the end of his journey he must have spent exactly \(k\) minutes in every room. Find all \(n\) and \(k\) for which it is possible to organize such a journey.
+
+        \textbf{134. (\color{red}d3\color{black}, 2019 New Zealand MO Round 1, Q6)} Let \(\mathcal{V}\) be the set of vertices of a regular 21-gon. Given a non-empty subset \(\mathcal{U}\) of \(\mathcal{V}\), let \(m(\mathcal{U})\) be the number of distinct lengths that occur between two distinct vertices in \(\mathcal{U}\). What is the maximum value of \(\frac{m(\mathcal{U})}{\vert \mathcal{U} \vert}\) as \(\mathcal{U}\) varies over non-empty subsets of \(\mathcal{V}\)?
+
+        \textbf{118. (\color{red}d3\color{black}, 1992 Russian MO (18th), Grade 9, P2 of 8)} Two players alternately put checkers on the cells of a 99×99 board. A player can put a checker on some cell if all neighboring cells are free or there is a checker put by his opponent on one of the neighboring cells (two cells are neighboring if they have a common side). The player who cannot make a legal move loses. Who has a winning strategy?
+
+        \textbf{109. (\color{red}d3\color{black}, 2017 BMO1 Q5)} If we take a \(2 \times 100\) (or \(100 \times 2\)) grid of unit squares, and remove alternate squares from a long side, the remaining 150 squares form a \textit{100-comb}. Henry takes a \(200 \times 200\) grid of unit squares, and chooses \(k\) of these squares so that James is unable to choose 150 uncoloured squares which form a 100-comb. What is the smallest possible value of \(k\)?
+
+        \textbf{86. (\color{red}d3\color{black}, 2014 British Mathematical Olympiad R2, Q1)} Every diagonal of a regular polygon with $2014$ sides is coloured in one of $n$ colours. Whenever two diagonals cross in the interior, they are of different colours. \\
+
+        What is the minimum value of $n$ for which this is possible?
+
+        \textbf{74. (\color{red}d3\color{black}, 1971 Putnam, A1)} Let there be given nine lattice points in 3-dimensional space. Show that there is a lattice point on the interior of one of the line segments joining two of these points.
+
+        \textbf{64. (\color{red}d3\color{black}, 2017 Russian MO National Finals, Day 1)} In a country, some cities are connected by one-way flights. (There is no more than one flight between two cities.) City (A) is said to be ``available'' for city (B) if there are flights (not necessarily directly) from (B) to (A). It is known that for any 2 cities (P) and (Q), there is a city (R) such that both (P) and (Q) are available from (R). Prove there is a city (A) such that every city is available for (A).
+
+        \textbf{39. (\color{red}d3\color{black}, 2014 BMO1, Q3 of 6)} A hotel has ten rooms along each side of a corridor. An olympiad team leader wishes to book seven rooms on the corridor so that no two reserved rooms on the same side of the corridor are adjacent. In how many ways can this be done?
+
+        \textbf{6. (\color{red}d3\color{black}, 2007 Romanian Final MO, F9, Q3)} The plane is partitioned into unit-width parallel bands, each colored white or black. Show that one can always place an equilateral triangle of side length 100 in the plane such that its vertices lie on the same color.
+        \textbf{1270. (\color{red}d4\color{black}, 2022 NZMO1, P5 of 8)} A round-robin tournament is one where each team plays every other team exactly once.  Five teams take part in such a tournament getting: \(3\) points for a win, \(1\) point for a draw and \(0\) points for a loss.  At the end of the tournament the teams are ranked from first to last according to the number of points.
+        \begin{enumerate}
+                \item Is it possible that at the end of the tournament, each team has a different number of points, and each team except for the team rank last has exactly two more points than the next-ranked team?
+                \item Is this possible if there are six teams in the tournament instead?
+        \end{enumerate}
+
+        After time $n$, the music stops and the competition is over. If the final position of both players is north or east, $A$ wins. If the final position of both players is south or west, $B$ wins. Determine who has a winning strategy when:
+        \begin{enumerate}
+                \item $n = 2013^{2012}$
+                \item $n = 2013^{2013}$
+        \end{enumerate}
+
+        \textbf{1024. (\color{red}d4\color{black}, 1999 Polish MO, P2 of 6)} A cube of side length 2 with one of the corner unit cubes removed is called a \emph{piece}. Prove that if a cube $T$ of side length $2^{n}$ is divided into $2^{3 n}$ unit cubes and one of the unit cubes is removed, then the rest can be cut into pieces.
+
+        \textbf{982. (\color{red}d4\color{black}, 2013 Online Math Open Fall, P29 of 30)} Let $n$ be a fixed integer. Kevin has $2^n-1$ cookies, each labeled with a unique nonempty subset of $\{1,2,3, \ldots , n\}$. Each day, he chooses one cookie uniformly at random out of the cookies not yet eaten. Then, he eats that cookie, and all remaining cookies that are labeled with a subset of that cookie (for example, if he chooses the cookie labeled with $\{1,2\}$, he eats that cookie as well as the cookies with $\{1\}$ and $\{2\}$). Find the expected value of the number of days that Kevin eats a cookie before all cookies are gone.
+
+        \textbf{947. (\color{red}d4\color{black}, 2019 BMO1, P6 of 6)} Ada the ant starts at a point $O$ on a plane. At the start of each minute she chooses North, South, East or West, and marches 1 metre in that direction. At the end of 2018 minutes she finds herself back at $O$. Let $n$ be the number of possible journeys which she could have made. What is the highest power of 10 which divides $n$?
+
+        \textbf{940. (\color{red}d4\color{black}, 2013 IMOSL, C1)} Let $n$ be an positive integer. Find the smallest integer $k$ with the following property; Given any real numbers $a_1 , \cdots , a_d $ such that $a_1 + a_2 + \cdots + a_d = n$ and $0 \le a_i \le 1$ for $i=1,2,\cdots ,d$, it is possible to partition these numbers into $k$ groups (some of which may be empty) such that the sum of the numbers in each group is at most $1$.
+
+        \textbf{926. (\color{red}d4\color{black}, AoPS (actual source unknown))} At a party, each person is friends with exactly \(3\) people, and all friendships are mutual. Prove that it is possible to split the people at the party into two groups, \(A\) and \(B\), so that each person in \(A\) has at least two friends in \(B\), and each person in \(B\) has at least two friends in \(A\).
+
+        \textbf{912. (\color{red}d4\color{black}, 2005 USAMO P4 of 6)} Legs $L_1, L_2, L_3, L_4$ of a square table each have length $n$, where $n$ is a positive integer. For how many ordered 4-tuples $(k_1, k_2, k_3, k_4)$ of nonnegative integers can we cut a piece of length $k_i$ from the end of leg $L_i \; (i = 1,2,3,4)$ and still have a stable table? (The table is stable if it can be placed so that all four of the leg ends touch the floor. Note that a cut leg of length 0 is permitted.)
+
+        \textbf{870. (\color{red}d4\color{black}, Iranian Combinatorics Olympiad, 2020)} Tony and Wang play the following game. First each of them independently roll a dice 100 times in a row to construct a 100-digit number with digits 1, 2, 3, 4, 5, 6 then they simultaneously shout a number from 1 to 100 and write down the corresponding digit to the number other person shouted in their 100 digit number. If both of the players write down 6 they both win otherwise they both loose. Do they have a strategy with wining chance more than 1/36?
+
+        \textbf{850. (\color{red}d4\color{black}, 2002 IMO, P1 of 6)} Let $n$ be a positive integer. Each point $(x,y)$ in the plane, where $x$ and $y$ are non-negative integers with $x+y<n$, is coloured red or blue, subject to the following condition: if a point $(x,y)$ is red, then so are all points $(x',y')$ with $x'\leq x$ and $y'\leq y$. Let $A$ be the number of ways to choose $n$ blue points with distinct $x$-coordinates, and let $B$ be the number of ways to choose $n$ blue points with distinct $y$-coordinates. Prove that $A=B$.
+
+        \textbf{849. (\color{red}d4\color{black}, 2018 HMMT Feb Team P 6 of 10)} Let $n \geq 2$ be a positive integer. A subset of positive integers $S$ is said to be \textit{comprehensive} if for every integer $0 \leq x < n$, there is a subset of $S$ whose sum has remainder $x$ when divided by $n$. Note that the empty set has sum $0$. Show that if a set $S$ is comprehensive, then there is some (not necessarily proper) subset of S with at most $n - 1$ elements which is also comprehensive.
+
+        \textbf{814. (\color{red}d4\color{black}, Problems in Set Theory)} Suppose we know that a rabbit is moving along a straight line on the lattice points of the plane by making identical jumps every minute (but we do not know where it is and what kind of jump it is making). If we can place a trap every hour to an arbitrary lattice point of the plane that captures the rabbit if it is there at that moment, then we can capture the rabbit.
+
+        \textbf{807. (\color{red}d4\color{black}, Unknown)} Let $A = (a_1, a_2, . . . , a_{2021})$ a sequence with integer values. Let $s(A)$ be the number of sequences $(a_{i_1}, a_{i_2}, a_{i_3}, a_{i_4})$ such that $1 \leq i_1 < i_2 < i_3 < i4  \leq 2021$, where $a_{i_2} = a_{i_1} + 1, a_{i_3} = a_{i_2} + 2, a_{i_4} = a_{i_3} + 3$. So if $A$ is any sequence with 2021 integers, determine the greatest possible value of $s(A)$. Can you generalize for $n$ integers?
+
+        \textbf{591. (\color{red}d4\color{black}, Folklore)} Some Tony noodles and some Wang noodles are distributed amongst 69 bowls of delicious Chinese noodle soup. Brainy Smurfs wants to choose 35 of the bowls in such a way that he obtains at least half the Tony noodles and at least half the Wang noodles. Is he always able to do this?
+
+        \textbf{575. (\color{red}d4\color{black}, 2011 Tournament of Towns Senior O, P5 of 5)} In a country, there are $100$ towns. Some pairs of towns are joined by roads. The roads do not intersect one another except meeting at towns. It is possible to go from any town to any other town by road. Prove that it is possible to pave some of the roads so that the number of paved roads at each town is odd.
+
+        \textbf{569. (\color{red}d4\color{black}, 2018 AMO, P2 of 8)} Consider a line with $\frac12(3^{100}+1)$ equally spaced points marked on it.
+
+        Prove that $2^{100}$ of these marked points can be coloured red so that no red point is at the same distance from two other red points.
+
+        \textbf{563. (\color{red}d4\color{black}, 2014 IrMO, P10 of 10)} Over a period of $k$ consecutive days, a total of $2014$ babies were born in a certain city, with at least one baby being born each day. Show that:
+        \renewcommand{\labelenumi}{\theenumi}
+        \renewcommand{\theenumi}{(\roman{enumi})}
+        \begin{enumerate}
+                \item If $1014 < k \le 2014$, there must be a period of consecutive days during which exactly $100$ babies were born.
+                \item By contrast, if $k = 1014$, such a period might not exist.
+        \end{enumerate}
+
+        \textbf{491. (\color{red}d4\color{black}, 2008 Tournament of Towns, Senior A P6 of 7)} Seated in a circle are $11$ wizards. A different positive integer not exceeding $1000$ is pasted onto the forehead of each. A wizard can see the numbers of the other $10$, but not his own. Simultaneously, each wizard puts up either his left hand or his right hand. Then each declares the number on his forehead at the same time. Is there a strategy on which the wizards can agree beforehand, which allows each of them to make the correct declaration?
+
+        \textbf{472. (\color{red}d4\color{black}, 2011 BMO1, P4 of 6)} Isaac has a large supply of counters, and places one in each of the $1\times 1$ squares of an $8\times 8$ chessboard. Each counter is either red, white or blue. A particular pattern of coloured counters is called an arrangement. Determine whether there are more arrangements which contain an even number of red counters or more arrangements which contain an odd number of red counters. \emph{Note that $0$ is an even number.}
+
+        \textbf{407. (\color{red}d4\color{black}, 2020 NZ Squad Selection Test 2)} Alice lives in Wonderland, where each town is owned by either the Queen of Hearts or the Mad Hatter, but not both. The towns are joined by a number of two-way roads, such that the following conditions hold:
+        \begin{itemize}\item Every road joins a town owned by the Queen to a town owned by the Mad Hatter. \item There is at most one road joining any two towns. \item There is an integer $k \geq 2$ such that each town has roads joining it directly to exactly $k$ other towns. \item It is possible to travel from any town to any other by road (perhaps passing through other towns along the way). \end{itemize}
+        One day, Alice tells the Queen that there exists a road whose destruction would leave two towns completely disconnected from each other: it would no longer be possible to travel from one of them to the other by road. Is Alice correct?
+
+        \textbf{337. (\color{red}d4\color{black}, 1997 IMO, Q4 of 6)} An $ n \times n$ matrix whose entries come from the set $ S = \{1, 2, \ldots , 2n - 1\}$ is called a silver matrix if, for each $ i = 1, 2, \ldots , n$, the $ i$-th row and the $ i$-th column together contain all elements of $ S$. Show that:
+
+        \begin{enumerate}
+
+                \item there is no silver matrix for $ n = 1997$;
+
+                \item[(b)] silver matrices exist for infinitely many values of $ n$.
+
+        \end{enumerate}
+
+        \textbf{336. (\color{red}d4\color{black}, 2006 Putnam, A2)} Alice and Bob play a game in which they take turns removing stones from a heap that initially has \(n\) stones. The number of stones removed at each turn must be one less than a prime number. The winner is the player who takes the last stone. Alice plays first. Prove that there are infinitely many \(n\) such that Bob has a winning strategy. (For example, if \(n=17,\) then Alice might take 6 leaving \(11 ;\) then Bob might take 1 leaving \(10 ;\) then Alice can take the remaining stones to win.)
+
+        \textbf{309. (\color{red}d4\color{black}, 2018 BMO2, P2 of 4)} There are $n$ places set for tea around a circular table, and every place has a small cake on a plate. Alice arrives first, sits at the table, and eats her cake (but it isn't very nice). Next the Mad Hatter arrives, and tells Alice that she will have a lonely tea party, and that she must keep on changing her seat, and each time she must eat the cake in front of her (if it has not yet been eaten). In fact the Mad Hatter is very bossy, and tells Alice that, for $i = 1, 2, \cdots n-1$, when she moves for the $i$-th time, she must move $a_i$ places and he hands Alice the list of instructions $a_1, a_2, \cdots a_{n-1}$. Alice does not like the cakes, and she is free to choose, at every stage, whether to move clockwise or anticlockwise. For which values of $n$ can the Mad Hatter force Alice to eat all the cakes?
+
+        \textbf{301. (\color{red}d4\color{black}, USAMO 1996, P4 of 6)} An $n$-term sequence $(x_1, x_2, \dots, x_n)$ in which each term is either 0 or 1 is called a binary sequence of length $n$. Let $a_n$ be the number of binary sequences of length $n$ containing no three consecutive terms equal to 0, 1, 0 in that order. Let $b_n$ be the number of binary sequences of length $n$ that contain no four consecutive terms equal to 0, 0, 1, 1 or 1, 1, 0, 0 in that order. Prove that $b_{n + 1} = 2a_n$ for all positive integers $n$.
+
+        \textbf{241. (\color{red}d4\color{black}, 2019 BMO2, P2 of 4)} For some integer \(n\), a set of \(n^2\) magical chess pieces arrange themselves on a square \(n^2 \times n^2\) chessboard composed of \(n^4\) unit squares. At a signal, the chess pieces all teleport to another square of the chessboard such that the distance between the centres of their old and new squares is \(n\). The chess pieces win if, both before and after the signal, there are no two chess pieces in the same row or column. For which values of \(n\) can the chess pieces win?
+
+        \textbf{225. (\color{red}d4\color{black}, 2016 AMO, Q4 of 8 )} A binary sequence is a sequence in which each term is equal to 0 or 1. We call a binary sequence \textit{superb} if each term is adjacent to at least one term that is equal to 1. For example, the sequence 0,1,1,0,0,1,1,1 is a superb binary sequence with eight terms. Let $B_n$ denote the number of superb binary sequences with $n$ terms. \\
+
+        Determine the smallest integer $n \geq 2$ such that $B_n$ is divisible by 20.
+
+        \textbf{184. (\color{red}d4\color{black}, 2001 Croatian MO, 3rd Grade, P4 of 4)} Let \(S\) be a set of 100 positive integers less than 200. Prove that there exists a non-empty subset \(T\) of \(S\) the product of which is a perfect square.
+
+        \textbf{176. (\color{red}d4\color{black}, 2011 British MO Round 2, Q4 of 4)} Let $\mathcal{G}$ be the set of points $(x, y)$ in teh plane such that $x$ and $y$ are integers in the range $1 \leq x, y \leq 2011$. A subset $\mathcal{S}$ of $\mathcal{G}$ is said to be \textit{parallelogram-free} if there is no proper parallelogram with all its vertices in $\mathcal{S}$. Determine the largest possible size of a parallelogram-free subset of $\mathcal{G}$. \textit{Note that a proper parallelogram is one where its vertices do not all lie on the same line.}
+
+        \textbf{84. (\color{red}d4\color{black}, 1991 Asian Pacific Mathematical Olympiad, Q2)} Suppose there are $997$ points given in a plane. If every two points are joined by a line segment with its midpoint coloured in red, show that there are at least $1991$ red points in the plane. Can you find a special case with exactly $1991$ red points?
+
+        \textbf{63. (\color{red}d4\color{black}, Some Australian TST)} Players Dan and Daniel take turns in putting the numbers $1$ to $64$ (not necessarily in that order) into the squares of an $8 \times 8$ chess board, with Dan going first. At the end the smallest number in each column is circled. Then the sum $S$ of the circled numbers is calculated.
+
+
+
+        \begin{enumerate}
+
+                \item Can Daniel always play in such a way that $S$ is even?
+
+
+
+                \item[(b)] Can Daniel always play in such a way that $S$ is odd?
+
+        \end{enumerate}
+
+        \textbf{53. (\color{red}d4\color{black}, 2019 NZ Squad Selection Test, Q7 of 9)} A set $S$ of positive integers is \textit{self-indulgent} if $\gcd (a, b) = \vert a - b \vert$ for any two distinct $a, b \in S$. \begin{itemize} \item Prove that any self-indulgent set is finite. \item[(b)] Prove that for any positive integer n, there exists a self-indulgent set with at least n elements. \end{itemize}
+
+        \textbf{30. (\color{red}d4\color{black}, 2008 Polish MO, Second Round, Q4)} An integer is written in every square of an $n \times n$ board such that the sum of all the integers in the board is 0. A move consists of choosing a square and decreasing the number in it by the number of neighbouring squares (by side), while increasing the numbers in each of the neighbouring squares by 1. Determine if there is an $n \geq 2$ for which it is always possible to turn all the integers into zeros in finitely many moves.
+
+        \textbf{26. (\color{red}d4\color{black}, 2000 Dutch MO, Second Round, Q5 of 5)} Consider an infinite strip of unit squares numbered $1, 2, 3, \dots$. A pawn starting on one of these squares can, at each step, move between squares numbered $n$, $2n$, and $3n+1$. Show that the pawn will be able to reach the square $1$ after finitely many steps.
+
+        \textbf{14. (\color{red}d4\color{black}, 2017 NZ Squad Selection Test, Q5)} Let $A$ and $B$ be two distinct points in the plane. Find all points $C$ in the plane such that there does not exist a point $X$ in the plane with the property that $X$ is closer to both $A$ and $B$ than $C$.
+
+        \textbf{4. (\color{red}d4\color{black}, 2015 APMO, Q4)} Let $n$ be a positive integer. Consider $2n$ distinct lines on the plane, no two of which are parallel. Of the $2n$ lines, $n$ are colored blue, the other $n$ are colored red. Let $\mathcal{B}$ be the set of all points on the plane that lie on at least one blue line, and $\mathcal{R}$ the set of all points on the plane that lie on at least one red line. Prove that there exists a circle that intersects $\mathcal{B}$ in exactly $2n-1$ points, and also intersects $\mathcal{R}$ in exactly $2n-1$ points.
+
+        \textbf{1376. (\color{red}d5\color{black}, 2006 IMOSL, C1)} We have $ n \geq 2$ lamps $ L_{1}, . . . ,L_{n}$ in a row, each of them being either on or off. Every second we simultaneously modify the state of each lamp as follows: if the lamp $ L_{i}$ and its neighbours (only one neighbour for $ i = 1$ or $ i = n$, two neighbours for other $ i$) are in the same state, then $ L_{i}$ is switched off; – otherwise, $ L_{i}$ is switched on.
+        Initially all the lamps are off except the leftmost one which is on.
+        \begin{enumerate}
+                \item Prove that there are infinitely many integers $ n$ for which all the lamps will eventually be off.
+                \item Prove that there are infinitely many integers $ n$ for which the lamps will never be all off.
+        \end{enumerate}
+
+        \textbf{1361. (\color{red}d5\color{black}, 2016 Romanian MO X, P4 of 4)} An ancient tribe spoke a language which only uses the letters $A$ and $B$. Researches have found that any two distinct words in the language differ in at least $3$ positions. (For example, the words $AAABB$ and $ABAAA$ differ in the 2nd, 4th and 5th position, so they can coexist).\\ Let $n\ge3$ be an integer. Show that the language cannot contain more than $2^n/(n+1)$ words with $n$ letters.
+
+        \textbf{1348. (\color{red}d5\color{black}, 2001 IMOSL, C4)} A set of three nonnegative integers $\{x,y,z\}$ with $x < y < z$ is called \emph{historic} if $\{z-y,y-x\} = \{1776,2001\}$. Show that the set of all nonnegative integers can be written as the union of pairwise disjoint historic sets.
+
+        \textbf{1346. (\color{red}d5\color{black}, 2022 Italian MO, P5 of 6)} ``Mag-o-matic" the robot can manipulate $101$ cups, arranged in a row whose positions are numbered from $1$ to $101$. Each cup may contain a ball or not. Mag-o-matic may only accept instructions of the form $(a;b,c)$ which it interprets like so:\\
+        \textit{``Consider the cup in position number $a$, if it contains a ball, swap the cups in positions $b$ and $c$, otherwise do nothing."}\\
+        A \emph{program} is a sequence of steps which doesn't depend on the initial configuration of the cups and Mag-o-bot executes one after the other.\\
+        A set $S \subseteq \{0,...,101\}$ is called \emph{computable} if there exists a program that, given some initial configuration of the cups, it finishes leaving a ball in the cup at position $1$ if and only if the total number of balls in the initial configuration is in $S$.\\
+        Find all computable sets.
+
+        \textbf{1284. (\color{red}d5\color{black}, Unknown (see https://gonitzoggo.com/archive/problem/441/english))} Tokens are placed on the squares of a \(2021 \times 2021\) board in such a way that each square contains at most one token. The token set of a square of the board is the collection of all tokens which are in the same row or column as this square. (A token belongs to the token set of the square in which it is placed.) What is the least possible number of tokens on the board if no two squares have the same token set?
+
+        \textbf{1264. (\color{red}d5\color{black}, 2019 IMOSL, C1)} The infinite sequence $a_0,a _1, a_2, \dots$ of (not necessarily distinct) integers has the following properties: $0\le a_i \le i$ for all integers $i\ge 0$, and \[\binom{k}{a_0} + \binom{k}{a_1} + \dots + \binom{k}{a_k} = 2^k\]for all integers $k\ge 0$. Prove that all integers $N\ge 0$ occur in the sequence (that is, for all $N\ge 0$, there exists $i\ge 0$ with $a_i=N$).
+
+        \textbf{1263. (\color{red}d5\color{black}, 2022 NZMO1, P4 of 8)} On a table, there is an empty bag and a chessboard containing exactly one token on each square.  Next to the table is a large pile that contains an unlimited supply of tokens.  Using only the following types of moves what is the maximum possible number of tokens that can be in the bag?
+        \begin{itemize}
+                \item \textbf{Type 1:} Choose a non-empty square on the chessboard that is not in the rightmost column.  Take a token from this square and place it, along with one token from the pile, on the square immediately to its right.
+                \item \textbf{Type 2:} Choose a non-empty square on the chessboard that is not in the bottom-most row.  Take a token from this square and place it, along with one token from the pile, on the square immediately below it.
+                \item \textbf{Type 3:} Choose two adjacent non-empty squares.  Remove a token from each and put them both into the bag.
+        \end{itemize}
+
+        \textbf{975. (\color{red}d5\color{black}, 2016 IMOSL, C1)} The leader of an IMO team chooses positive integers $n$ and $k$ with $n > k$, and announces them to the deputy leader and a contestant. The leader then secretly tells the deputy leader an $n$-digit binary string, and the deputy leader writes down all $n$-digit binary strings which differ from the leader's in exactly $k$ positions. (For example, if $n = 3$ and $k = 1$, and if the leader chooses $101$, the deputy leader would write down $001, 111$ and $100$.) The contestant is allowed to look at the strings written by the deputy leader and guess the leader's string. What is the minimum number of guesses (in terms of $n$ and $k$) needed to guarantee the correct answer?
+
+        \textbf{863. (\color{red}d5\color{black}, 1998 IMOSL, C1)} A rectangular array of numbers is given. In each row and each column, the sum of all numbers is an integer. Prove that each nonintegral number $x$ in the array can be changed into either $\lceil x\rceil$ or $\lfloor x\rfloor$ so that the row sums and column sums remain unchanged. (Note that $\lceil x\rceil$ is the least integer greater than or equal to $x$, while $\lfloor x\rfloor$ is the greatest integer less than or equal to $x$.)
+
+        \textbf{836. (\color{red}d5\color{black}, 2021 MODSMO, P4 of 7)} Given a triangulation $T$ of a (not necessarily convex) simple polygon $P,$ a move consists of picking two triangles in $T$ which form a convex quadrilateral, erasing their shared side, then drawing in the diagonal which connects the remaining two vertices of these triangles. Prove that for any two triangulations $T_{1}$ and $T_{2}$ of $P,$ there is a sequence of moves which transforms $T_{1}$ into $T_{2}$. \medskip
+
+        \emph{Note: A simple polygon is a polygon that does not intersect itself and has no holes.}
+
+        \textbf{597. (\color{red}d5\color{black}, 2015 BMO2, P2 of 4)} In Oddesdon Primary School there are an odd number of classes. Each class contains an odd number of pupils. One pupil from each class will be chosen to form the school council. Prove that the following two statements are logically equivalent.
+
+        a) There are more ways to form a school council which includes an odd number of boys than ways to form a school council which includes an odd number of girls.
+
+        b) There are an odd number of classes which contains more boys than girls.
+
+        \textbf{520. (\color{red}d5\color{black}, 2016 APMO, P4 of 5)} The country Dreamland consists of $2016$ cities. The airline Starways wants to establish some one-way flights between pairs of cities in such a way that each city has exactly one flight out of it. Find the smallest positive integer $k$ such that no matter how Starways establishes its flights, the cities can always be partitioned into $k$ groups so that from any city it is not possible to reach another city in the same group by using at most $28$ flights.
+
+        \textbf{485. (\color{red}d5\color{black}, 2013 APMO, P4 of 5)} Let $a$ and $b$ be positive integers, and let $A$ and $B$ be finite sets of integers satisfying
+        \smallbreak
+        (i) $A$ and $B$ are disjoint
+        \smallbreak
+        (ii) if an integer $i$ belongs to either $A$ or to $B$ then either $i + a$ belongs to $A$ or $i - b$ belongs to $B.$
+        \smallbreak
+        Prove that $a \lvert A \rvert = b \lvert B \rvert.$
+
+        \textbf{450. (\color{red}d5\color{black}, Robbins' Theorem)} In a country some pairs of cities are connected by two-way roads in such a way that it is always possible to travel from any city to any other city using these roads. It turns out that if any one road is closed then it is still possible to travel from any city to any other city. Prove that each road can be assigned a direction in such a way that it is possible to travel from any city to any other city along the new one-way roads.
+
+        \textbf{352. (\color{red}d5\color{black}, 2008 RMM P2 of 4)} Prove that every bijective function $ f: \mathbb{Z}\rightarrow\mathbb{Z}$ can be written in the way $ f=u+v$ where $ u,v: \mathbb{Z}\rightarrow\mathbb{Z}$ are bijective functions.
+
+        \textbf{325. (\color{red}d5\color{black}, 2016 ELMO P1)} Cookie Monster says a positive integer $n$ is $crunchy$ if there exist $2n$ real numbers $x_1,x_2,\ldots,x_{2n}$, not all equal, such that the sum of any $n$ of the $x_i$'s is equal to the product of the other $n$ of the $x_i$'s. Help Cookie Monster determine all crunchy integers.
+
+        \textbf{303. (\color{red}d5\color{black}, PST 15.0.21)} There are three amoebas sitting at the points \((0,0)\), \((0,1)\), and \((1,0)\) of the coordinate plane. Every now and then an amoeba splits into two separate amoebas, one of which will move one unit upwards, while the other moves one unit to the right. They do this in such a way that no two amoebas ever sit at the same point.\\
+
+        \makebox[1.5em]{}Is it possible for the amoebas to split in such a way that the points \((0,0)\), \((0,1)\), and \((1,0)\) will eventually be unoccupied?
+
+        \textbf{296. (\color{red}d5\color{black}, 2005 Slovenia TST, Day 2 P1 of 3)} Find the number of sequences of length 2005 with the following properties:
+        \begin{enumerate}
+                \item{No three consecutive terms of the sequence are equal;}
+                \item{Every term is either 1 or -1;}
+                \item{The sum of all terms of the sequence is at least 666.}
+        \end{enumerate}
+
+        \textbf{276. (\color{red}d5\color{black}, 2017 APMO, P3 of 5)} Let \(A(n)\) denote the number of sequences \(a_1 \geq a_2 \geq \cdots \geq a_k\) of positive integers for which \(a_1 + \cdots + a_k = n\) and each \(a_i + 1\) is a power of two (\(i = 1, 2, \dots , k\)). Let \(B(n)\) denote the number of sequences \(b_1 \geq b_2 \geq \cdots \geq b_m\) of positive integers for which \(b_1 + \cdots + b_m = n\) and each inequality \(b_j \geq 2b_{j+1}\) holds (\(j = 1, 2, \dots, m - 1\)).
+
+        \makebox[1.5em]{}Prove that \(A(n) = B(n)\) for every positive integer \(n\).
+
+        \textbf{269. (\color{red}d5\color{black}, 2020 ICMC, Round 1, P3 of 6)} Consider a grid of points where each point is coloured either white or black, such that no two rows have the same sequence of colours and no two columns have the same sequence of colours. Let a \emph{table} denote four points on the grid that form the vertices of a rectangle with sides parallel to those of the grid. A table is called \emph{balanced} if one diagonal pair of points are coloured white and the other diagonal pair black.
+
+        Determine all possible values of $ k \geq 2 $ for which there exists a colouring of a $ k \times 2019 $ grid with no balanced tables.
+
+        \textbf{261. (\color{red}d5\color{black}, 2018 IMOSL, C1)} Let $n \geq 3$ be an integer. Prove that there exists a set $S$ of $2n$ positive integers satisfying the following property: For every $m = 2, 3, \dots, n$ the set $S$ can be partitioned into two subsets with equal sums of elements, with one of the subsets of cardinality $m$.
+
+        \textbf{246. (\color{red}d5\color{black}, 2018 APMO, Q3 of 5)} A collection of $n$ squares on the plane is called \textit{tri-connected} if the following criteria are satisfied:
+
+        \begin{itemize}
+
+                \item[(i)] All the squares are congruent
+
+                \item[(ii)] If two squares have a point $P$ in common, then $P$ is a vertex of each of the squares.
+
+                \item[(iii)] Each square touches exactly 3 other squares.
+
+        \end{itemize}
+
+        How many positive integers $n$ are there with $2018 \leq n \leq 3018$, such that there exists a collection of $n$ squares that is tri-connected?
+
+        \textbf{239. (\color{red}d5\color{black}, 2019 NZMO2, P5 of 5)} Prove that the set $\{x \in \mathbb{Q} \, | \, x$ is pre-periodic$\}$ is finite.
+
+        \textbf{234. (\color{red}d5\color{black}, 2016 BMO2, P2 of 4)} Alison has compiled a list of 20 hockey teams, ordered by how good she thinks they are, but refuses to share it. Benjamin may mention three teams to her, and she will then choose either to tell him which she thinks is the weakest team of the three, or which she thinks is the strongest team of the three. Benjamin may do this as many times as he likes. Determine the largest \(N\) such that Benjamin can guarantee to be able to find a sequence \(T_1, T_2, \dots, T_N\) of teams with the property that he knows that Alison thinks that \(T_i\) is better than \(T_{i+1}\) for each \(1 \leq i < N\).
+
+        \textbf{150. (\color{red}d5\color{black}, 2012 IMOSL C1)} Several positive integers are written in a row. Iteratively, Alice chooses two adjacent numbers \(x\) and \(y\) such that \(x > y\) and \(x\) is to the left of \(y\), and replaces the pair \((x,y)\) by either \((y + 1,x)\) or \((x - 1,x)\). Prove that she can perform only finitely many such iterations.
+
+        \textbf{49. (\color{red}d5\color{black}, 2015 IMO Shortlist, C1)} In Lineland there are \(n \geq 1\) towns, arranged along a road running from left to right. Each town has a left bulldozer (put to the left of the town and facing left) and a right bulldozer (put to the right of the town and facing right). The sizes of the \(2n\) bulldozers are distinct. Every time when a right and a left bulldozer confront each other, the larger bulldozer pushes the smaller one off the road. On the other hand, the bulldozers are quite unprotected at their rears; so, if a bulldozer reaches the rear-end of another one, the first one pushes the second one off the road, regardless of their sizes.
+
+        \quad Let \(A\) and \(B\) be two towns, with \(B\) being to the right of \(A\). We say that town \(A\) can sweep town \(B\) away if the right bulldozer of \(A\) can move over to \(B\) pushing off all bulldozers it meets. Similarly, \(B\) can sweep \(A\) away if the left bulldozer of \(B\) can move to \(A\) pushing off all bulldozers of all towns on its way.
+
+        \quad Prove that there is exactly one town which cannot be swept away by any other one.
+
+        \textbf{32. (\color{red}d5\color{black}, 2008 BMO2, Q3)} Adrian has drawn a circle in the $xy-$plane whose radius is a positive integer at most 2008. The origin lies somewhere inside the circle. You are allowed to ask him questions of the form "Is the point $(x,y)$ inside your circle?" After each question he will answer truthfully "yes" or "no". Show that it is always possible to deduce the radius of the circle after at most sixty questions. [Note: Any point which lies exactly on the circle may be considered to lie inside the circle.]
+
+        \textbf{20. (\color{red}d5\color{black}, 2017 IMO Shortlist, C2)} Let $n$ be a positive integer. Define a \emph{chameleon} to be any sequence of $3n$ letters, with exactly $n$ occurrences of each of the letters $a$, $b$, and $c$. Define a \emph{swap} to be the transposition of two adjacent letters in a chameleon. Prove that for any chameleon $X$, there exists a chameleon $Y$ such that $X$ cannot be changed to $Y$ using fewer than $3n^2/2$ swaps.
+
+        \textbf{2. (\color{red}d5\color{black}, 2017 IMO Shortlist, C1)} A rectangle $R$ with odd integer side lengths is divided into small rectangles with integer side lengths. Prove that there is at least one among the small rectangles whose distances from the four sides of $R$ are either all odd or all even.
+
+        \textbf{1347. (\color{red}d6\color{black}, 2022 Benelux MO, P2 of 4)} Let $n$ be a positive integer. There are $n$ ants walking along a line at constant nonzero speeds. Different ants need not walk at the same speed or walk in the same direction. Whenever two or more ants collide, all the ants involved in this collision instantly change directions. (Different ants need not be moving in opposite directions when they collide, since a faster ant may catch up with a slower one that is moving in the same direction.) The ants keep walking indefinitely.\\ Assuming that the total number of collisions is finite, determine the largest possible number of collisions in terms of $n$.
+
+        \textbf{1271. (\color{red}d6\color{black}, 2022 IMO, P1 of 6)} The Bank of Oslo issues two types of coin: aluminum (denoted A) and bronze (denoted B). Marianne has $n$ aluminum coins and $n$ bronze coins arranged in a row in some arbitrary initial order. A chain is any subsequence of consecutive coins of the same type. Given a fixed positive integer $k \leq 2n$, Gilberty repeatdly performs the following operation: he identifies the longest chain containing the $k^{th}$ coin from the left and moves all coins in that chain to the left end of the row. For example, if $n=4$ and $k=4$, the process starting from the ordering $AABBBABA$ would be $AABBBABA \to BBBAAABA \to AAABBBBA \to BBBBAAAA \to ...$
+
+        Find all pairs $(n,k)$ with $1 \leq k \leq 2n$ such that for every initial ordering, at some moment during the process, the leftmost $n$ coins will all be of the same type.
+
+        \textbf{1227. (\color{red}d6\color{black}, 2019 IMOSCL, C2)} You are given a set of $n$ blocks, each weighing at least $1$; their total weight is $2n$. Prove that for every real number $r$ with $0 \leq r \leq 2n-2$ you can choose a subset of the blocks whose total weight is at least $r$ but at most $r+2$.
+
+        \textbf{1165. (\color{red}d6\color{black}, 2011 IMO, P4 of 6)} Let $n > 0$ be an integer. We are given a balance and $n$ weights of weight $2^0, 2^1, \cdots, 2^{n-1}$. We are to place each of the $n$ weights on the balance, one after another, in such a way that the right pan is never heavier than the left pan. At each step we choose one of the weights that has not yet been placed on the balance, and place it on either the left pan or the right pan, until all of the weights have been placed.
+        Determine the number of ways in which this can be done.
+
+        \textbf{1152. (\color{red}d6\color{black}, 2015 EGMO, P5 of 6)} Let $m$, $n$ be positive integers with $m > 1$. Anastasia partitions the integers $1, 2, \dots , 2m$ into $m$ pairs. Boris then chooses one integer from each pair and finds the sum of these chosen integers.
+        Prove that Anastasia can select the pairs so that Boris cannot make his sum equal to $n$.
+
+        \textbf{1103. (\color{red}d6\color{black}, 2022 AFMO, P1 of 4)} Let $n$ be a positive integer. Suppose that we have $2n+1$ dons in Trinity College Great Court on a hot summer's day, each of whom are in possession of a water gun. Logically, each don will want to shoot someone. However, the dons have established a rule that, in any triple of dons, there must be an even number of dons who shoot. In order to make this process fair, each don will point at the don they want to shoot, and the dons decide who will shoot accordingly. Any don that is not shot in this process will leave the court. The process then repeats until, after $k$ rounds of shooting, there are fewer then three dons left and the process ends. Prove that $k+1$ is prime.
+
+        \textbf{1012. (\color{red}d6\color{black}, 2004 USAMO, P4 of 6)} Alice and Bob play a game on a $6 \times 6$ grid.  On his or her turn, a player chooses a rational number not yet appearing in the grid and writes it in an empty square of the grid. Alice goes first and then the players alternate. When all squares have numbers written in them, in each row, the square with the greatest number in that row is colored black. Alice wins if she can then draw a line from the top of the grid to the bottom of the grid that stays in black squares, and Bob wins if she can't.  (If two squares share a vertex, Alice can draw a line from one to the other that stays in those two squares.)  Find, with proof, a winning strategy for one of the players.
+
+        \textbf{998. (\color{red}d6\color{black}, 2019 RMM, P1 of 6)} Amy and Bob play the game. At the beginning, Amy writes down a positive integer on the board. Then the players take moves in turn, Bob moves first. On any move of his, Bob replaces the number $n$ on the blackboard with a number of the form $n-a^2$, where $a$ is a positive integer. On any move of hers, Amy replaces the number $n$ on the blackboard with a number of the form $n^k$, where $k$ is a positive integer. Bob wins if the number on the board becomes zero. \newline
+        \newline
+        Can Amy prevent Bob's win?
+
+        \textbf{983. (\color{red}d6\color{black}, 2020 IMO, P4 of 6)} There is an integer $n > 1$. There are $n^2$ stations on a slope of a mountain, all at different altitudes. Each of two cable car companies, $A$ and $B$, operates $k$ cable cars; each cable car provides a transfer from one of the stations to a higher one (with no intermediate stops). The $k$ cable cars of $A$ have $k$ different starting points and $k$ different finishing points, and a cable car which starts higher also finishes higher. The same conditions hold for $B$. We say that two stations are linked by a company if one can start from the lower station and reach the higher one by using one or more cars of that company (no other movements between stations are allowed). Determine the smallest positive integer $k$ for which one can guarantee that there are two stations that are linked by both companies.
+
+        \textbf{976. (\color{red}d6\color{black}, 2017 BMO2, P4 of 4)} Bobby's booby-trapped safe requires a 3-digit code to unlock it. Alex has a probe which can test combinations without typing them on the safe. The probe responds \textit{Fail} if no individual digit is correct. Otherwise it responds \textit{Close}, including when all digits are correct. For example, if the correct code is 014, then the responses to 099 and 014 are both Close, but the response to 140 is Fail. If Alex is following an optimal strategy, what is the smallest number of attempts needed to guarantee that he knows the correct code, whatever it is?
+
+        \textbf{962. (\color{red}d6\color{black}, 2017 RMM, P1 of 6)}
+        \begin{enumerate}
+                \item Prove that every positive integer $n$ can be written uniquely in the form \[n=\sum_{j=1}^{2k+1}(-1)^{j-1}2^{m_j},\]where $k\geq 0$ and $0\le m_1<m_2\cdots <m_{2k+1}$ are integers.
+
+                      This number $k$ is called \textit{weight} of $n$.
+
+                \item Find (in closed form) the difference between the number of positive integers at most $2^{2017}$ with even weight and the number of positive integers at most $2^{2017}$ with odd weight.
+        \end{enumerate}
+
+        \textbf{955. (\color{red}d6\color{black}, 2005 IMOSL, C1)} A house has an even number of lamps distributed among its rooms in such a way that there are at least three lamps in every room. Each lamp shares a switch with exactly one other lamp, not necessarily from the same room. Each change in the switch shared by two lamps changes their states simultaneously. Prove that for every initial state of the lamps there exists a sequence of changes in some of the switches at the end of which each room contains lamps which are on as well as lamps which are off.
+
+        \textbf{949. (\color{red}d6\color{black}, 2014 IMOSL, C3)} Let $n \geq 2$ be an integer. Consider an  $n \times n$ chessboard consisting of $n^2$ unit squares. A configuration of $n$ rooks on this board is peaceful if every row and every column contains exactly one rook. Find the greatest positive integer $k$ such that, for each peaceful configuration of $n$ rooks, there is a $k \times k$ square which does not contain a rook on any of its $k^2$ unit squares.
+
+        \textbf{941. (\color{red}d6\color{black}, Irish MO, 1994 P10 of 10)} If a square is partitioned into $n$ convex polygons, determine the maximum number of edges present in the resulting figure.
+
+        \textbf{920. (\color{red}d6\color{black}, 2018 IMOSL, C1)} Let $n\geq 3$ be an integer. Prove that there exists a set $S$ of $2n$ positive integers satisfying the following property: For every $m=2,3,...,n$ the set $S$ can be partitioned into two subsets with equal sums of elements, with one of subsets of cardinality $m$.
+
+        \textbf{892. (\color{red}d6\color{black}, 2020 BMO2, P3 of 4)} A $2019\times 2019$ square grid is made up of $2019^2$ unit cells. Each cell is coloured either black or white. A colouring is called \textit{balanced} if, within every square subgrid made up of $k^2$ cells for $1\le k\le 2019$, the number of black cells differs from the number of white cells by at most one. How many different balanced colourings are there?
+
+        \textit{(Two colourings are different if there is at least one cell which is black in exactly one of them.)}
+
+        \textbf{829. (\color{red}d6\color{black}, 2018 IMO, P4 of 6)} A \textit{site} is any point $(x, y)$ in the plane such that $x$ and $y$ are both positive integers less than or equal to 20.
+
+        Initially, each of the 400 sites is unoccupied. Amy and Ben take turns placing stones with Amy going first. On her turn, Amy places a new red stone on an unoccupied site such that the distance between any two sites occupied by red stones is not equal to $\sqrt{5}$. On his turn, Ben places a new blue stone on any unoccupied site. (A site occupied by a blue stone is allowed to be at any distance from any other occupied site.) They stop as soon as a player cannot place a stone.
+
+        Find the greatest $K$ such that Amy can ensure that she places at least $K$ red stones, no matter how Ben places his blue stones.
+
+        \textbf{810. (\color{red}d6\color{black}, 2014 ELMO SL, C5)} Let $n$ be a positive integer. For any $k$, denote by $a_k$ the number of permutations of $\{1,2,\dots,n\}$ with exactly $k$ disjoint cycles. (For example, if $n=3$ then $a_2=3$ since $(1)(23)$, $(2)(31)$, $(3)(12)$ are the only such permutations.) Evaluate \[ a_n n^n + a_{n-1} n^{n-1} + \dots + a_1 n. \]
+
+        \textbf{802. (\color{red}d6\color{black}, 2020 USAMO P2 of 6)} An empty $2020 \times 2020 \times 2020$ cube is given, and a $2020 \times 2020$ grid of square unit cells is drawn on each of its six faces. A beam is a $1 \times 1 \times 2020$ rectangular prism. Several beams are placed inside the cube subject to the following conditions:\\
+
+$\bullet$ The two $1 \times 1$ faces of each beam coincide with unit cells lying on opposite faces of the cube. (Hence, there are $3 \cdot 2020^2$ possible positions for a beam.)\\
+
+$\bullet$ No two beams have intersecting interiors.\\
+$\bullet$ The interiors of each of the four $1 \times 2020$ faces of each beam touch either a face of the cube or the interior of the face of another beam.\\
+
+        What is the smallest positive number of beams that can be placed to satisfy these conditions?
+
+        \textbf{556. (\color{red}d6\color{black}, 2004 Balkan MO, P4 of 4)} The plane is partitioned into regions by a finite number of lines no three of which are concurrent. Two regions are called ``neighbours'' if the intersection of their boundaries is a segment, or half-line or a line (a point is not a segment). An integer is to be assigned to each region in such a way that:
+        \begin{enumerate}
+                \item the product of the integers assigned to any two neighbours is less than their sum;
+                \item for each of the given lines, and each of the half-planes determined by it, the sum of the integers, assigned to all of the regions lying on this half-plane equal to zero.
+        \end{enumerate}
+        Prove that this is possible if and only if not all of the lines are parallel.
+
+        \textbf{533. (\color{red}d6\color{black}, 1977 FIST, P4 of 4)} Prove that for each integer $n > 1$ it is possible to construct a necklace having $2n^2$ beads in all, these being of $2n$ different colours, in such a way that for each pair of different colours there is at least one pair of adjacent beads of these two colours. Is it possible to do the same using $2n^2 -1$ beads in all? Give a reason for your answer. (A \emph{necklace} is a circular arrangement of beads, with no fastener intervening; an ample supply of beads of all the colours is assumed to be available)
+
+        \textbf{499. (\color{red}d6\color{black}, 2010 Iran TST, P4 of 12)} The distance between two vertices in a weighted graph is defined as the smallest sum of edges in a path joining them. Call a tree \textit{special} if it has no vertices of degree $2.$ Alice tells Bob that she will choose a special weighted tree $T$ but doesn't show Bob which tree she has chosen. She then circles all the leaves, noting down the distance between each pair of leaves. Before giving the tree to Bob, she erases all the vertices of degree greater than $1$ and all the edges. Prove that Bob can recover the original special tree using the information that Alice has recorded.
+
+        \textbf{424. (\color{red}d6\color{black}, 2019 EGMO, P6 of 6)} On a circle, Alina draws $2019$ chords, the endpoints of which are all different. A point is considered \emph{marked} if it is either
+        \renewcommand{\labelenumi}{\theenumi}
+        \renewcommand{\theenumi}{(\roman{enumi})}
+        \begin{enumerate}
+                \item one of the $4038$ endpoints of a chord; or
+                \item an intersection point of at least two chords.
+        \end{enumerate}
+        Alina labels each marked point. Of the $4038$ points meeting criterion (i), Alina labels $2019$ points with a $0$ and the other $2019$ points with a $1$. She labels each point meeting criterion (ii) with an arbitrary integer (not necessarily positive).\\
+        \hspace*{15pt} Along each chord, Alina considers the segments connecting two consecutive marked points. (A chord with $k$ marked points has $k-1$ such segments.) She labels each such segment in yellow with the sum of the labels of its two endpoints and in blue with the absolute value of their difference.\\
+        \hspace*{15pt} Alina finds that the $N + 1$ yellow labels take each value $0, 1, . . . , N$ exactly once. Show that at least one blue label is a multiple of $3$.\\
+        \hspace*{15pt} (A \emph{chord} is a line segment joining two different points on a circle.)
+
+        \textbf{403. (\color{red}d6\color{black}, Fifteen Puzzle)} Consider a $4 \times 4$ grid with 15 tiles labelled $1$ to $15$ such that row $i$ contains sliding tiles with numbers $4i-3, 4i-2, 4i-1, 4i$ for $i=1,2,3$, and the last row contains only $13, 14, 15$, leaving the last cell empty. These tiles can move up, down, left, right, provided they are moving into an empty square. In doing so, they leave an empty cell behind.
+
+        Does there exist a sequence of moves that switch the position of tiles $14$ and $15$, and leave the other tiles where they started?
+
+        \textbf{402. (\color{red}d6\color{black}, 2014 Balkan MO, P4 of 4)} Let $n$ be a positive integer. A regular hexagon with side length $n$ is divided into equilateral triangles with side length $1$ by lines parallel to its sides.
+        Find the number of regular hexagons all of whose vertices are among the vertices of those equilateral triangles.
+
+        \textbf{353. (\color{red}d6\color{black}, Folklore)} A family of subsets of $\{1, 2, \dots, 2n\}$ is chosen such that none is a subset of another. What is the maximum possible size of this family in terms of n?
+
+        \textbf{274. (\color{red}d6\color{black}, 2000 Putnam, B6)} Let $B$ be a set of more than $2^{n+1}/n$ distinct points with coordinates of the form $(\pm 1,\pm 1,\ldots,\pm 1)$ in $n$-dimensional space with $n\geq 3$. Show that there are three distinct points in $B$ which are the vertices of an equilateral triangle.
+
+        \textbf{248. (\color{red}d6\color{black}, 2019 IMO, P5 of 6)} The Bank of Bath issues coins with an $H$ on one side and a $T$ on the other. Harry has $n$ of these coins arranged in a line from left to right. He repeatedly performs the following operation: if there are exactly $k>0$ coins showing $H$, then he turns over the $k$th coin from the left; otherwise, all coins show $T$ and he stops. For example, if $n=3$ the process starting with the configuration $THT$ would be $THT \to HHT  \to HTT \to TTT$, which stops after three operations.
+
+
+
+        (a) Show that, for each initial configuration, Harry stops after a finite number of operations.
+
+
+
+        (b) For each initial configuration $C$, let $L(C)$ be the number of operations before Harry stops. For example, $L(THT) = 3$ and $L(TTT) = 0$. Determine the average value of $L(C)$ over all $2^n$ possible initial configurations $C$.
+
+        \textbf{228. (\color{red}d6\color{black}, 2015 CMO, P5)} Let $p$ be a prime number for which $\frac{p-1}{2}$ is also prime, and let $a,b,c$ be integers not divisible by $p$. Prove that there are at most $1+\sqrt {2p}$ positive integers $n$ such that $n<p$ and $p$ divides $a^n+b^n+c^n$.
+
+        \textbf{221. (\color{red}d6\color{black}, Tournament of Towns 2008, Senior A-level Q7 )} A test consists of $30$ true or false questions. After the test (answering all $30$ questions), Victor gets his score: the number of correct answers. Victor is allowed to take the test (the same questions ) several times. Can Victor work out a strategy that insure him to get a perfect score after
+
+
+
+        (a) $30$th attempt?
+
+
+
+        (b) $25$th attempt?
+
+
+
+        (Initially, Victor does not know any answer)
+
+        \textbf{185. (\color{red}d6\color{black}, 2000 Baltic Way, Q7 of 20)} In a \(40 \times 50\) array of control buttons, each button has two states: on and off. By touching a button, its state and the states of all buttons in the same row and in the same column are switched. Prove that the array of control buttons can be altered from the all-off state to the all-on state by touching buttons successively, and determine the least number of touches needed to do so.
+
+        \textbf{144. (\color{red}d6\color{black}, 2002 Korean MO, P5 of 6)} Prove that an \(m \times n\) rectangle, where \(m, n \geq 2\), can be partitioned into L-shaped tetraminoes if and only if \(8 \mid mn.\)
+
+        \textbf{96. (\color{red}d6\color{black}, 2004 Niels Henrik Abel Contest (Norway), P4)} Among the \(n\) inhabitants of an island, where \(n\) is even, every two are either friends or enemies. One day, the chief of the island orders that each inhabitant (including himself) makes and wears a necklace consisting of marbles, in such a way that two necklaces have a marble of the same type if and only if their owners are friends.
+
+        \begin{enumerate}
+
+                \item Show that the chief's order can be achieved by using \(n^2/4\) different types of marbles.
+
+                \item Prove that this is not necessarily true with less than \(n^2/4\) types of marbles.
+
+        \end{enumerate}
+
+        \textbf{22. (\color{red}d6\color{black}, 2004 Swedish MO (44th), Final Round, Q4)} A square with integer side length $n \geq 3$ is divided into $n^2$ unit squares, and $n-1$ lines are drawn so that each square's interior is cut by at least one line. \begin{enumerate} \item Give an example of such a configuration for some $n$. \item Show that some two of the lines must meet inside the square \end{enumerate}
+
+        \textbf{10. (\color{red}d6\color{black}, 2015 IMO, Q1)} We say that a finite set $S$ of points in the plane is \textit{balanced} if, for any two different points $A$ and $B$ in $S$, there is a point $C$ in $S$ such that $AC = BC$. We say that $S$ is \textit{centre-free} if for any three different points $A, B$ and $C$ in $S$, there is no point $P$ in $S$ such that $PA = PB = PC$. (a) Show that for all integers $n \geq 3$, there exists a balanced set consisting of $n$ points.\
+        (b) Determine all integers $n \geq 3$ for which there exists a balanced centre-free set consisting of $n$ points.
+
+        \textbf{1370. (\color{red}d7\color{black}, 2012 USAMO, P2 of 6)} A circle is divided into $432$ congruent arcs by $432$ points. The points are colored in four colors such that some $108$ points are colored Red, some $108$ points are colored Green, some $108$ points are colored Blue, and the remaining $108$ points are colored Yellow. Prove that one can choose three points of each color in such a way that the four triangles formed by the chosen points of the same color are congruent.
+
+        \textbf{1286. (\color{red}d7\color{black}, 2022 Spring ToT, Senior A6)} The king assembled 300 wizards and gave them the following challenge. For this challenge, 25 colors can be used, and they are known to the wizards. Each of the wizards receives a hat in one of those 25 colors. If for each color the number of used hats would be written down then all these numbers would be different, and the wizards know this. Each wizard sees which hat was given to each other wizard but does not see his own hat. Simultaneously each wizard reports the color of his own hat. Is it possible for the wizards to coordinate their actions beforehand so that at least 150 of them would report correctly?
+
+        \textbf{1258. (\color{red}d7\color{black}, 2011 ToT Spring Round, Junior A-7)} In every cell of a square table is a number. The sum of the largest two numbers in each row is $a$ and the sum of the largest two numbers  in each column is $b$. Prove that $a=b$.
+
+        \textbf{1237. (\color{red}d7\color{black}, 2014 IMO, P2 of 6)} Let $n \ge 2$ be an integer. Consider an $n \times n$ chessboard consisting of $n^2$ unit squares. A configuration of $n$ rooks on this board is \textit{peaceful} if every row and every column contains exactly one rook. Find the greatest positive integer $k$ such that, for each peaceful configuration of $n$ rooks, there is a $k \times k$ square which does not contain a rook on any of its $k^2$ unit squares.
+
+        \textbf{1201. (\color{red}d7\color{black}, 2010 IMOSL, C2)} On some planet, there are $2^N$ countries $(N \geq 4).$ Each country has a flag $N$ units wide and one unit high composed of $N$ fields of size $1 \times 1,$ each field being either yellow or blue. No two countries have the same flag. We say that a set of $N$ flags is diverse if these flags can be arranged into an $N \times N$ square so that all $N$ fields on its main diagonal will have the same color. Determine the smallest positive integer $M$ such that among any $M$ distinct flags, there exist $N$ flags forming a diverse set.
+
+        \textbf{1160. (\color{red}d7\color{black}, 2022 ARMO Grade 9 P4 of 8)} There are $18$ children in the class. Parents decided to give children from this class a cake. To do this, they first learned from each child the area of the piece he wants to get. After that, they showed a square-shaped cake, the area of which is exactly equal to the sum of $18$ named numbers. However, when they saw the cake, the children wanted their pieces to be squares too. The parents cut the cake with lines parallel to the sides of the cake (cuts do not have to start or end on the side of the cake). For what maximum k the parents are guaranteed to cut out $k$ square pieces from the cake, which you can give to $k$ children so that each of them gets what they want?
+
+        \textbf{1104. (\color{red}d7\color{black}, 2004 IMOSL, C3)} The following operation is allowed on a finite graph: Choose an arbitrary cycle of length $4$ (if there is any), choose an arbitrary edge in that cycle, and delete it from the graph. For a fixed integer $n\geq 2$, find the least number of edges of a graph that can be obtained by repeated application of the operation from the complete graph on $n$ vertices (where each pair of vertices are joined by an edge).
+
+        \textbf{1083. (\color{red}d7\color{black}, 2015 ELMO, P2 of 6)} Let $m$, $n$, and $x$ be positive integers. Prove that $$ \sum_{i = 1}^n \min\left(\left\lfloor \frac{x}{i} \right\rfloor, m \right) = \sum_{i = 1}^m \min\left(\left\lfloor \frac{x}{i} \right\rfloor, n \right).$$
+
+\textbf{1069. (\color{red}d7\color{black}, Folklore)} A maze is an \(8 \times 8\) board with some adjacent squares separated by walls, so that any two squares can be connected by a path not passing through any wall.  Given a command LEFT, RIGHT, UP, DOWN, a pawn in the maze makes a step in the corresponding direction unless it encounters a wall or an edge of the chessboard, in which case it does not move.\\[12pt]
+
+An angel creates a list consisting of a finite sequence of commands and gives it to a devil, who then constructs a maze and places a pawn in one of the 64 squares.  Can the angel create a list which ensures that, no matter what the devil does, the pawn will visit every square?
+
+\textbf{1068. (\color{red}d7\color{black}, 2022 BMO2, P3 of 4)} The cards from $n$ identical decks of cards are put into boxes. Each deck contains $50$ cards, labelled from $1$ to $50$. Each box can contain at most $2022$ cards. A pile of boxes is said to be \textit{regular} if that pile contains equal numbers of cards with each label. Show that there exists some $N$ such that, if $n\ge N$, then the boxes can be divided into two non-empty regular piles.
+
+\textbf{1047. (\color{red}d7\color{black}, 2008 IMO, P5 of 6)} Let $ n$ and $ k$ be positive integers with $ k \geq n$ and $ k - n$ an even number. Let $ 2n$ lamps labelled $ 1$, $ 2$, ..., $ 2n$ be given, each of which can be either on or off. Initially all the lamps are off. We consider sequences of steps: at each step one of the lamps is switched (from on to off or from off to on).
+
+Let $ N$ be the number of such sequences consisting of $ k$ steps and resulting in the state where lamps $ 1$ through $ n$ are all on, and lamps $ n + 1$ through $ 2n$ are all off.
+
+Let $ M$ be number of such sequences consisting of $ k$ steps, resulting in the state where lamps $ 1$ through $ n$ are all on, and lamps $ n + 1$ through $ 2n$ are all off, but where none of the lamps $ n + 1$ through $ 2n$ is ever switched on.
+
+Determine $ \frac {N}{M}$.
+
+\textbf{942. (\color{red}d7\color{black}, 2012 IMOSL, C2)} Let $n \geq 1$ be an integer. What is the maximum number of disjoint pairs of elements of the set $\{ 1,2,\ldots , n \}$ such that the sums of the different pairs are different integers not exceeding $n$?
+
+\textbf{907. (\color{red}d7\color{black}, 1999 IMOSL, C6)} Suppose that every integer has been given one of the colours red, blue, green or yellow. Let $x$ and $y$ be odd integers so that $|x| \neq |y|$. Show that there are two integers of the same colour whose difference has one of the following values: $x,y,x+y$ or $x-y$.
+
+\textbf{872. (\color{red}d7\color{black}, 2014 IMOSL, C4)} Construct a tetromino by attaching two $2 \times 1$ dominoes along their longer sides such that the midpoint of the longer side of one domino is a corner of the other domino. This construction yields two kinds of tetrominoes with opposite orientations. Let us call them $S$- and $Z$-tetrominoes, respectively.
+Assume that a lattice polygon $P$ can be tiled with $S$-tetrominoes. Prove that no matter how we tile $P$ using only $S$- and $Z$-tetrominoes, we always use an even number of $Z$-tetrominoes.
+
+\textbf{838. (\color{red}d7\color{black}, 2021 MODSMO, P6 of 7)} Some $1 \times 1$ squares are placed in a larger $2021 \times 2021$ grid, at lattice positions, with all sides parallel to the coordinate axes. A slide consists of picking a small square, and making it move a nonzero distance in one of the four cardinal directions until it hits another square or fully leaves the box. If it leaves the box, it is destroyed. A move consists of sliding all non-destroyed squares in the grid exactly once, in some order. \medskip
+
+Find the maximum number of moves possible, across all initial arrangements.
+
+\textbf{782. (\color{red}d7\color{black}, 2020 USA TST, P4 of 6)} For a finite simple graph $G$, we define $G'$ to be the graph on the same vertex set as $G$, where for any two vertices $u \neq v$, the pair $\{u,v\}$ is an edge of $G'$ if and only if $u$ and $v$ have a common neighbor in $G$.
+\smallbreak
+Prove that if $G$ is a finite simple graph which is isomorphic to $(G')'$, then $G$ is also isomorphic to $G'$.
+
+\textbf{775. (\color{red}d7\color{black}, 2020 USA TSTST, P5 of 9)} Let $\mathbb{N}^2$ denote the set of ordered pairs of positive integers. A finite subset $S$ of $\mathbb{N}^2$ is stable if whenever $(x,y)$ is in $S$, then so are all points $(x',y')$ of $\mathbb{N}^2$ with both $x'\leq x$ and $y'\leq y$. Prove that if $S$ is a stable set, then among all stable subsets of $S$ (including the empty set and $S$ itself), at least half of them have an even number of elements.
+
+\textbf{690. (\color{red}d7\color{black}, 2013 IMO, P2 of 6)} A configuration of 4027 points in the plane is called Colombian if it consists of 2013 red points and 2014 blue points, and no three of the points of the configuration are collinear. \\By drawing some lines, the plane is divided into several regions. An arrangement of lines is good for a Colombian configuration if the following two conditions are satisfied:
+\begin{itemize}
+        \item no line passes through any point of the configuration;
+        \item no region contains points of both colours.
+\end{itemize}
+Find the least value of $k$ such that for any Colombian configuration of 4027 points, there is a good arrangement of $k$ lines.
+
+\textbf{676. (\color{red}d7\color{black}, 2016 IMO, P2 of 6)} Find all integers $n$ for which each cell of $n \times n$ table can be filled with one of the letters $I,M$ and $O$ in such a way that:\begin{itemize}\item in each row and each column, one third of the entries are $I$, one third are $M$ and one third are $O$; and\item in any diagonal, if the number of entries on the diagonal is a multiple of three, then one third of the entries are $I$, one third are $M$ and one third are $O$.\end{itemize}\textbf{Note.} The rows and columns of an $n \times n$ table are each labelled $1$ to $n$ in a natural order. Thus each cell corresponds to a pair of positive integer $(i,j)$ with $1 \le i,j \le n$. For $n>1$, the table has $4n-2$ diagonals of two types. A diagonal of first type consists all cells $(i,j)$  for which $i+j$ is a constant, and the diagonal of this second type consists all cells $(i,j)$ for which $i-j$ is constant.
+
+\textbf{613. (\color{red}d7\color{black}, 2018 USA TSTST, P2 of 9)} In the nation of Onewaynia, certain pairs of cities are connected by one-way roads. Every road connects exactly two cities (roads are allowed to cross each other, e.g., via bridges), and each pair of cities has at most one road between them. Moreover, every city has exactly two roads leaving it and exactly two roads entering it.
+\bigbreak
+We wish to close half the roads of Onewaynia in such a way that every city has exactly one road leaving it and exactly one road entering it. Show that the number of ways to do so is a power of $2$ greater than $1$ (i.e.\ of the form $2^n$ for some integer $n \ge 1$).
+
+\textbf{585. (\color{red}d7\color{black}, 2020 ELMO, P5 of 6)} Let $m$ and $n$ be positive integers. Find the smallest positive integer $s$ for which there exists an $m \times n$ rectangular array of positive integers such that
+\begin{itemize}
+        \item each row contains $n$ distinct consecutive integers in some order,
+        \item each column contains $m$ distinct consecutive integers in some order, and
+        \item each entry is less than or equal to $s$.
+\end{itemize}
+
+\textbf{565. (\color{red}d7\color{black}, 2013 Tournament of Towns Junior A, P7 of 7)} Two teams $A$ and $B$ play a school ping pong tournament. The team $A$ consists of $m$ students, and the team $B$ consists of $n$ students where $m \ne n$.
+There is only one ping pong table to play and the tournament is organized as follows: Two students from different teams start to play while other players form a line waiting for their turn to play. After each game the first player in the line replaces the member of the same team at the table and plays with the remaining player. The replaced player then goes to the end of the line.
+Prove that every two players from the opposite teams will eventually play against each other.
+
+\textbf{551. (\color{red}d7\color{black}, 2020 Tournament of Towns Senior A, P7 of 7)} Consider an infinite white plane divided into square cells. For which $k$ it is possible to paint a positive finite number of cells black so that on each horizontal, vertical and diagonal line of cells there is either exactly $k$ black cells or none at all?
+
+\textbf{515. (\color{red}d7\color{black}, 2018 IMOSL, C3)} Let $n$ be a given positive integer. Sisyphus performs a sequence of turns on a board consisting of $n + 1$ squares in a row, numbered $0$ to $n$ from left to right. Initially, $n$ stones are put into square $0$, and the other squares are empty. At every turn, Sisyphus chooses any nonempty square, say with $k$ stones, takes one of these stones and moves it to the right by at most $k$ squares (the stone should say within the board). Sisyphus' aim is to move all $n$ stones to square $n$.
+\smallbreak
+Prove that Sisyphus cannot reach the aim in less than
+\[ \left \lceil \frac{n}{1} \right \rceil + \left \lceil \frac{n}{2} \right \rceil + \left \lceil \frac{n}{3} \right \rceil + \dots + \left \lceil \frac{n}{n} \right \rceil \]turns. (As usual, $\lceil x \rceil$ stands for the least integer not smaller than $x$. )
+
+\textbf{222. (\color{red}d7\color{black}, 2008 China TST Q3 of 3 )} Suppose that every positve integer has been given one of the colors red, blue,arbitrarily. Prove that there exists an infinite sequence of positive integers $ a_{1} < a_{2} < a_{3} < \cdots < a_{n} < \cdots,$ such that inifinite sequence of positive integers $ a_{1},\frac {a_{1} + a_{2}}{2},a_{2},\frac {a_{2} + a_{3}}{2},a_{3},\frac {a_{3} + a_{4}}{2},\cdots$ has the same color.
+
+\textbf{192. (\color{red}d7\color{black}, 2005 IMOSL C5)} There are \(n\) markers, each with one side white and the other side black, aligned in a row so that their white sides are up. In each step, if possible, we choose a marker with the white side up (but not one of outermost markers), remove it and reverse the closest marker to the left and the closest marker to the right of it. Prove that one can achieve the state with only two markers remaining if and only if \(n-1\) is not divisible by 3.
+
+\textbf{1314. (\color{red}d8\color{black}, 2021 ToT Fall, Senior A-7)} A white bug sits in one corner square of a $1000 \times n$ chessboard, where $n$ is an odd positive integer and $n > 2020$. In the two nearest corner squares there are two black chess bishops. On each move, the bug either steps into a square adjacent by side or moves as a chess knight. The bug wishes to reach the opposite corner square by never visiting a square occupied or attacked by a bishop, and visiting every other square exactly once. Show that the number of ways for the bug to attain its goal does not depend on $n$.
+
+\textbf{1210. (\color{red}d8\color{black}, 2021 IMOSL, C6)} A hunter and an invisible rabbit play a game on an infinite square grid. First the hunter fixes a colouring of the cells with finitely many colours. The rabbit then secretly chooses a cell to start in. Every minute, the rabbit reports the colour of its current cell to the hunter, and then secretly moves to an adjacent cell that it has not visited before (two cells are adjacent if they share a side). The hunter wins if after some finite time either
+\begin{itemize}
+        \item the rabbit cannot move; or
+        \item the hunter can determine the cell in which the rabbit started.
+\end{itemize}
+Decide whether there exists a winning strategy for the hunter.
+
+\textbf{1182. (\color{red}d8\color{black}, 2021 USA TSTST P5 of 9)} Let $T$ be a tree on $n$ vertices with exactly $k$ leaves. Suppose that there exists a subset of at least $\frac{n+k-1}{2}$ vertices of $T$, no two of which are adjacent. Show that the longest path in $T$ contains an even number of edges.
+
+\textbf{1147. (\color{red}d8\color{black}, 2022 BalkanMO, P4 of 4)} Consider an $n \times n$ grid consisting of $n^2$ until cells, where $n \geq 3$ is a given odd positive integer. First, Dionysus colours each cell either red or blue. It is known that a frog can hop from one cell to another if and only if these cells have the same colour and share at least one vertex. Then, Xanthias views the colouring and next places $k$ frogs on the cells so that each of the $n^2$ cells can be reached by a frog in a finite number (possibly zero) of hops. Find the least value of $k$ for which this is always possible regardless of the colouring chosen by Dionysus.
+
+\textbf{1049. (\color{red}d8\color{black}, 2020 BalkanMO SL, C3)} Odin and Evelyn are playing a game, Odin going first. There are initially $3k$ empty boxes, for some given positive integer $k$. On each player's turn, they can write a non-negative integer in an empty box, or erase a number in a box and replace it with a strictly smaller non-negative integer. However, Odin is only ever allowed to write odd numbers, and Evelyn is only allowed to write even numbers. The game ends when either one of the players cannot move, in which case the other player wins; or there are exactly $k$ boxes with the number $0$, in which case Evelyn wins if all other boxes contain the number $1$, and Odin wins otherwise. Who has a winning strategy?
+
+\textbf{1013. (\color{red}d8\color{black}, 2017 China TST Test 3, P3 of 6)} Let $X$ be a set of $100$ elements. Find the smallest possible $n$ satisfying the following condition: Given a sequence of $n$ subsets of $X$, $A_1,A_2,\ldots,A_n$, there exists $1 \leq i < j < k \leq n$ such that $$A_i \subseteq A_j \subseteq A_k \text{ or } A_i \supseteq A_j \supseteq A_k.$$
+
+\textbf{992. (\color{red}d8\color{black}, 2019 China TST Test 4, P2 of 6)} A graph $G(V,E)$ is triangle-free, but adding any edges to the graph will form a triangle. It's given that $|V|=2019$, $|E|>2018$, find the minimum of $|E|$ .
+
+\textbf{978. (\color{red}d8\color{black}, 2019 China National Olympiad, P5 of 6)} Given is an $n\times n$ board, with an integer written in each grid. For each move, I can choose any grid, and add $1$ to all $2n-1$ numbers in its row and column. Find the largest $N(n)$, such that for any initial choice of integers, I can make a finite number of moves so that there are at least $N(n)$ even numbers on the board.
+
+\textbf{971. (\color{red}d8\color{black}, 2018 China TST Test 3 P3)} Does there exist a bijection $f:\mathbb{N}^{+} \rightarrow \mathbb{N}^{+}$, such that there exist a positive integer $k$, and it's possible to have each positive integer colored by one of $k$ chosen colors, such that for any $x \neq y$ , $f(x)+y$ and $f(y)+x$ are not the same color?
+
+\textbf{923. (\color{red}d8\color{black}, 2019 IMOSL, C4)} \setlength\parindent{1.5em}
+On a flat plane in Camelot, King Arthur builds a labyrinth $\mathfrak{L}$ consisting of $n$ walls, each of which is an infinite straight line. No two walls are parallel, and no three walls have a common point. Merlin then paints one side of each wall entirely red and the other side entirely blue.\\
+\indent At the intersection of two walls there are four corners: two diagonally opposite corners where a red side and a blue side meet, one corner where two red sides meet, and one corner where two blue sides meet. At each such intersection, there is a two-way door connecting the two diagonally opposite corners at which sides of different colours meet.\\
+\indent After Merlin paints the walls, Morgana then places some knights in the labyrinth. The knights can walk through doors, but cannot walk through walls.\\
+\indent Let $k(\mathfrak{L})$ be the largest number $k$ such that, no matter how Merlin paints the labyrinth $\mathfrak{L},$ Morgana can always place at least $k$ knights such that no two of them can ever meet. For each $n,$ what are all possible values for $k(\mathfrak{L}),$ where $\mathfrak{L}$ is a labyrinth with $n$ walls?
+
+\textbf{866. (\color{red}d8\color{black}, 2020 IMOSL, C4)} The Fibonacci numbers $F_0, F_1, F_2, . . .$ are defined inductively by $F_0=0, F_1=1$, and $F_{n+1}=F_n+F_{n-1}$ for $n \ge 1$. Given an integer $n \ge 2$, determine the smallest size of a set $S$ of integers such that for every $k=2, 3, . . . , n$ there exist some $x, y \in S$ such that $x-y=F_k$.
+
+\textbf{852. (\color{red}d8\color{black}, 2021 IMO, P5)} Two squirrels, Bushy and Jumpy, have collected 2021 walnuts for the winter. Jumpy numbers the walnuts from 1 through 2021, and digs 2021 little holes in a circular pattern in the ground around their favourite tree.
+
+The next morning Jumpy notices that Bushy had placed one walnut into each hole, but had paid no attention to the numbering. Unhappy, Jumpy decides to reorder the walnuts by performing a sequence of 2021 moves. In the $k$ -th move, Jumpy swaps the positions of the two walnuts adjacent to walnut $k$.\\
+
+Prove that there exists a value of $k$ such that, on the $k$ -th move, Jumpy swaps some walnuts $a$ and $b$ such that $a<k<b$.
+
+\textbf{803. (\color{red}d8\color{black}, 2020 USAMO, P5 of 6)} A finite set $S$ of points in the coordinate plane is called overdetermined if $|S|\ge 2$ and there exists a nonzero polynomial $P(t)$, with real coefficients and of degree at most $|S|-2$, satisfying $P(x)=y$ for every point $(x,y)\in S$.
+\smallbreak
+For each integer $n\ge 2$, find the largest integer $k$ (in terms of $n$) such that there exists a set of $n$ distinct points that is not overdetermined, but has $k$ overdetermined subsets.
+
+\textbf{781. (\color{red}d8\color{black}, 2020 USEMO, P2 of 6)} Calvin and Hobbes play a game. First, Hobbes picks a family $F$ of subsets of $\{1, 2, . . . , 2020\}$, known to both players. Then, Calvin and Hobbes take turns choosing a number from $\{1, 2, . . . , 2020\}$ which is not already chosen, with Calvin going first, until all numbers are taken (i.e., each player has $1010$ numbers). Calvin wins if he has chosen all the elements of some member of $F$, otherwise Hobbes wins. What is the largest possible size of a family $F$ that Hobbes could pick while still having a winning strategy?
+
+\textbf{774. (\color{red}d8\color{black}, 2021 Final Japan MO, P5 of 5)} Let $n$ be a positive integer. Find all integers $k$ among $1,2,\dots,2n^2$ which satisfy the condition that there is a $2n\times 2n$ grid of square unit cells such that when $k$ different cells are painted black while the other cells are painted white, the minimum possible number of $2\times 2$ squares that contain both black and white cells is $2n-1$
+
+\textbf{761. (\color{red}d8\color{black}, 2019 RMMSL, C2)} Fix an integer $n \ge 2$. A fairy chess piece leopard may move one cell up, or one cell to the right, or one cell diagonally down-left. A leopard is placed onto some cell of a $3n \times 3n$ chequer board. The leopard makes several moves, never visiting a cell twice, and comes back to the starting cell. Determine the largest possible number of moves the leopard could have made.
+
+\textbf{733. (\color{red}d8\color{black}, 2020 AUS → UNK F3, P2 of 3)} The city of Parth occupies an edge-connected group of $n$ cells in an infinite square
+grid such that, for any two cells in Parth in the same row or column, all the cells between
+them are also in Parth. To increase tourism, the government wishes to build a single road
+by connecting the centres of some cells sharing an edge, so that the road is infinite in both
+directions and visits every cell exactly once. In planning, they notice that no matter how they
+design their road, the number of times the road passes from a cell in Parth to a cell outside of
+Parth is fixed. For what values of $n$ is this possible?
+
+
+\textbf{726. (\color{red}d8\color{black}, 2016 BalkanMO, P4 of 4)} The plane is divided into squares by two sets of parallel lines, forming an infinite grid. Each unit square is coloured with one of $1201$ colours so that no rectangle with perimeter $100$ contains two squares of the same colour. Show that no rectangle of size $1\times1201$ or $1201\times1$ contains two squares of the same colour.
+
+\textbf{719. (\color{red}d8\color{black}, 2012 RMM, P1 of 6)} Given a finite number of boys and girls, a sociable set of boys is a set of boys such that every girl knows at least one boy in that set; and a sociable set of girls is a set of girls such that every boy knows at least one girl in that set. Prove that the number of sociable sets of boys and the number of sociable sets of girls have the same parity. (Acquaintance is assumed to be mutual.)
+
+\textbf{705. (\color{red}d8\color{black}, 2013 IMOSL, C3)} A crazy physicist discovered a new kind of particle wich he called an imon, after some of them mysteriously appeared in his lab. Some pairs of imons in the lab can be entangled, and each imon can participate in many entanglement relations. The physicist has found a way to perform the following two kinds of operations with these particles, one operation at a time.
+(i) If some imon is entangled with an odd number of other imons in the lab, then the physicist can destroy it.
+(ii) At any moment, he may double the whole family of imons in the lab by creating a copy $I'$ of each imon $I$. During this procedure, the two copies $I'$ and $J'$ become entangled if and only if the original imons $I$ and $J$ are entangled, and each copy $I'$ becomes entangled with its original imon $I$; no other entanglements occur or disappear at this moment.
+
+Prove that the physicist may apply a sequence of much operations resulting in a family of imons, no two of which are entangled.
+
+\textbf{648. (\color{red}d8\color{black}, 2006 USAMO, P5 of 6)} A mathematical frog jumps along the number line. The frog starts at $1$, and jumps according to the following rule: if the frog is at integer $n$, then it can jump either to $n+1$ or to $n + 2^{m_n+1}$ where $2^{m_n}$ is the largest power of $2$ that is a factor of $n.$ Show that if $k \geq 2$ is a positive integer and $i$ is a nonnegative integer, then the minimum number of jumps needed to reach $2^ik$ is greater than the minimum number of jumps needed to reach $2^i.$
+
+\textbf{634. (\color{red}d8\color{black}, 2017 IMO, P5 of 6)} An integer $N \ge 2$ is given. A collection of $N(N + 1)$ soccer players, no two of whom are of the same height, stand in a row. Sir Alex wants to remove $N(N - 1)$ players from this row leaving a new row of $2N$ players in which the following $N$ conditions hold:
+\smallbreak
+($1$) no one stands between the two tallest players,
+\smallbreak
+($2$) no one stands between the third and fourth tallest players,
+\smallbreak
+$\;\;\vdots$
+\smallbreak
+($N$) no one stands between the two shortest players.
+\bigbreak
+Show that this is always possible.
+
+\textbf{628. (\color{red}d8\color{black}, 2019 ELMO, P3 of 6)} Let $n \ge 3$ be a fixed integer. A game is played by $n$ players sitting in a circle. Initially, each player draws three cards from a shuffled deck of $3n$ cards numbered $1, 2, \dots, 3n$. Then, on each turn, every player simultaneously passes the smallest-numbered card in their hand one place clockwise and the largest-numbered card in their hand one place counterclockwise, while keeping the middle card.
+\bigbreak
+Let $T_r$ denote the configuration after $r$ turns (so $T_0$ is the initial configuration). Show that $T_r$ is eventually periodic with period $n$, and find the smallest integer $m$ for which, regardless of the initial configuration, $T_m=T_{m+n}$.
+
+\textbf{607. (\color{red}d8\color{black}, 2019 IMOSL, C6)} Let $n>1$ be an integer. Suppose we are given $2n$ points in the plane such that no three of them are collinear. The points are to be labelled $A_1, A_2, \dots , A_{2n}$ in some order. We then consider the $2n$ angles $\angle A_1A_2A_3, \angle A_2A_3A_4, \dots, \angle A_{2n-1}A_{2n}A_1, \angle A_{2n}A_1A_2$. We measure each angle in the way that gives the smallest positive value (i.e. between $0^{\circ}$ and $180^{\circ}$). Prove that there exists an ordering of the given points such that the resulting $2n$ angles can be separated into two groups with the sum of one group of angles equal to the sum of the other group.
+
+\textbf{571. (\color{red}d8\color{black}, "Say Red")} A pack of cards is shuffled and dealt out to you one card at a time. At any moment, based on what you have seen so far, you can say that `I predict the next card will be red'. You can only make this prediction once. Which strategy gives you the greatest chance of being right?
+
+\textbf{558. (\color{red}d8\color{black}, 2019 Tournament of Towns Senior A, P7 of 7)} On the grid plane all possible broken lines with the following properties are constructed:
+each of them starts at the point $(0, 0)$, has all its vertices at integer points, each linear segment goes either up or to the right along the grid lines. For each such broken line consider the corresponding worm, the subset of the plane consisting of all the cells that share at least one point with the broken line. Prove that the number of worms that can be divided into dominoes (rectangles $2\times 1$ and $1\times 2$) in exactly $n > 2$ different ways, is equal to the number of positive integers that are less than n and relatively prime to $n$.
+
+\textbf{530. (\color{red}d8\color{black}, 2016 IMO, P6 of 6)} There are $n\ge 2$ line segments in the plane such that every two segments cross and no three segments meet at a point. Geoff has to choose an endpoint of each segment and place a frog on it facing the other endpoint. Then he will clap his hands $n-1$ times. Every time he claps,each frog will immediately jump forward to the next intersection point on its segment. Frogs never change the direction of their jumps. Geoff wishes to place the frogs in such a way that no two of them will ever occupy the same intersection point at the same time.
+
+(a) Prove that Geoff can always fulfill his wish if $n$ is odd.
+
+(b) Prove that Geoff can never fulfill his wish if $n$ is even.
+
+\textbf{529. (\color{red}d8\color{black}, 2019 USEMO, P5 of 6)} Let $\mathcal{P}$ be a regular polygon, and let $\mathcal{V}$ be its set of vertices. Each point in $\mathcal{V}$ is colored red, white, or blue. A subset of $\mathcal{V}$ is patriotic if it contains an equal number of points of each color, and a side of $\mathcal{P}$ is dazzling if its endpoints are of different colors.
+\bigbreak
+Suppose that $\mathcal{V}$ is patriotic and the number of dazzling edges of $\mathcal{P}$ is even. Prove that there exists a line, not passing through any point in $\mathcal{V}$, dividing $\mathcal{V}$ into two nonempty patriotic subsets.
+
+\textbf{396. (\color{red}d8\color{black}, 2018 IMOSL C6)} Let $a$ and $b$ be distinct positive integers. The following infinite process takes place on an initially empty board.
+
+\begin{enumerate}
+        \item If there is at least a pair of equal numbers on the board, we choose such a pair and increase one of its components by $a$ and the other by $b$.
+        \item If no such pair exists, we write two times the number $0$.
+\end{enumerate}
+Prove that, no matter how we make the choices in operation $1$, operation $2$ will be performed only finitely many times.
+
+\textbf{332. (\color{red}d8\color{black}, 2019 AUS -> UNK F3, P1 of 3)} The city of Loopdon has several circular ring roads which are divided into arcs which meet at junctions. It is known that one can drive from any point on a road to any other point on a road by travelling at most 100km. However, the Environmental Agency needs to shut down one arc on each ring road to reduce pollution. Can they choose which arcs to shut down so that it is still possible to drive from any point on an open road to any other point on an open road by travelling at most 200km?
+
+\textbf{187. (\color{red}d8\color{black}, 2015 USA December TST, Q3 of 3)} A physicist encounters $2015$ atoms called usamons. Each usamon either has one electron or zero electrons, and the physicist can't tell the difference. The physicist's only tool is a diode. The physicist may connect the diode from any usamon $A$ to any other usamon $B$. (This connection is directed.) When she does so, if usamon $A$ has an electron and usamon $B$ does not, then the electron jumps from $A$ to $B$. In any other case, nothing happens. In addition, the physicist cannot tell whether an electron jumps during any given step. The physicist's goal is to isolate two usamons that she is sure are currently in the same state. Is there any series of diode usage that makes this possible?
+
+\textbf{166. (\color{red}d8\color{black}, 2013 IMOSL C5)} Let $r$ be a positive integer, and let $a_{0}, a_{1}, a_{2} \dots$ be an infinite sequence of real numbers. Assume that for all nonnegative integers $m, s$ there exists a positive integer $n,$ with $m < n < m + r,$ satisfying $$a_{m} + a_{m + 1} + \dots + a_{m + s} = a_{n} + a_{n + 1} + \dots + a_{n + s}.$$ Prove that the sequence is periodic.
+
+\textbf{83. (\color{red}d8\color{black}, 2011 USAMO, Q6)} Let $\mathcal{A}$ be a set with $225$ elements. Suppose further that there are eleven subsets of $\mathcal{A}$ such that each $\mathcal{A}_i$ has $45$ elements, and $\vert \mathcal{A}_j \cap \mathcal{A}_j \vert = 9 $ $\forall$ $ 1 \leq i < j \leq 11$. Prove that $\vert \mathcal{A}_1 \cup \mathcal{A}_2 \cup\cdots \cup \mathcal{A}_{11} \vert \geq 165$, and give an example for which equality holds.
+
+\textbf{1349. (\color{red}d9\color{black}, 2022 Grosman MO P7 of 7)} Let $k\leq n$ be two positive integers. $n$ points are marked on a line. It is known that for each marked point, the number of marked points at a distance $\leq 1$ from it (including the point itself) is divisible by $k$.
+Show that $k$ divides $n$ (without remainder).
+
+\textbf{1231. (\color{red}d9\color{black}, 2021 IMOSL C5)} Let $n$ and $k$ be two integers with $n>k\geq 1$. There are $2n+1$ students standing in a circle. Each student $S$ has $2k$ neighbors - namely, the $k$ students closest to $A$ on the left, and the $k$ students closest to $A$ on the right.
+
+Suppose that $n+1$ of the students are girls, and the other $n$ are boys. Prove that there is a girl with at least $k$ girls among her neighbors.
+
+\textbf{1196. (\color{red}d9\color{black}, 2010 IMOSL, C6)} Given a positive integer $k$ and other two integers $b > w > 1.$ There are two strings of pearls, a string of $b$ black pearls and a string of $w$ white pearls. The length of a string is the number of pearls on it. One cuts these strings in some steps by the following rules. In each step: \\\\
+\textbf{(i)} The strings are ordered by their lengths in a non-increasing order. If there are some strings of equal lengths, then the white ones precede the black ones. Then $k$ first ones (if they consist of more than one pearl) are chosen; if there are less than $k$ strings longer than 1, then one chooses all of them. \\
+\textbf{(ii)} Next, one cuts each chosen string into two parts differing in length by at most one. (For instance, if there are strings of $5, 4, 4, 2$ black pearls, strings of $8, 4, 3$ white pearls and $k = 4,$ then the strings of 8 white, 5 black, 4 white and 4 black pearls are cut into the parts $(4,4), (3,2), (2,2)$ and $(2,2)$ respectively.) The process stops immediately after the step when a first isolated white pearl appears. \\\\
+Prove that at this stage, there will still exist a string of at least two black pearls.
+
+
+\textbf{1111. (\color{red}d9\color{black}, 2014 All-Russian MO, Grade 11, P8 of 8)} Julius Ceasar has ordered two of his servants to entertain him in a game of War. He first divides a pack of cards numbered $1,\ldots,n$ arbitrarily between the two servants.
+
+\makebox[1.5em]{}Each round, both servants reveal the top card of their pile, and the one with the higher card takes both cards and places them at the bottom of their pile, in an order they choose. The game ends once one of the servants has no cards left in their pile.
+
+\makebox[1.5em]{}Julius won't let the servants go until they finish the game. Can the servants work together to avoid playing forever?
+
+\textbf{999. (\color{red}d9\color{black}, 2013 China TST Day 5, P3 of 3)} There are $101$ people sitting at a round table in any order with $1,2,... , 101$ cards respectively in some order. A transfer consists of someone giving one card to one of the two people adjacent to them. Find the smallest positive integer $k$ such that no matter the original configuration it's possible to perform at most $k$ transfers to make each person have the same number of cards.
+
+\textbf{937. (\color{red}d9\color{black}, 2016 IMOSL, C6)} There are $n \geq 3$ islands in a city. Initially, the ferry company offers some routes between some pairs of islands so that it is impossible to divide the islands into two groups such that no two islands in different groups are connected by a ferry route.
+\smallbreak
+After each year, the ferry company will close a ferry route between some two islands $X$ and $Y$. At the same time, in order to maintain its service, the company will open new routes according to the following rule: for any island which is connected to a ferry route to exactly one of $X$ and $Y$, a new route between this island and the other of $X$ and $Y$ is added.
+\smallbreak
+Suppose at any moment, if we partition all islands into two nonempty groups in any way, then it is known that the ferry company will close a certain route connecting two islands from the two groups after some years. Prove that after some years there will be an island which is connected to all other islands by ferry routes.
+
+\textbf{909. (\color{red}d9\color{black}, Folklore)} You wish to simulate an $n$-sided die using finitely many coin flips. For any $p \in [0, 1]$ you can order a coin with bias $p$ and flip that coin as many times as you wish. For each $n$, what is the fewest number of coins needed? (For example, a $4$-sided die can be simulated with one coin by flipping a fair coin twice.)
+
+\textbf{811. (\color{red}d9\color{black}, 2017 IMOSL, C6)} Let $n > 1$ be a given integer. An $n \times n \times n$ cube is composed of $n^3$ unit cubes. Each unit cube is painted with one colour. For each $n \times n \times 1$ box consisting of $n^2$ unit cubes (in any of the three possible orientations), we consider the set of colours present in that box (each colour is listed only once). This way, we get $3n$ sets of colours, split into three groups according to the orientation.
+
+It happens that for every set in any group, the same set appears in both of the other groups. Determine, in terms of $n$, the maximal possible number of colours that are present.
+
+\textbf{797. (\color{red}d9\color{black}, 2018 IMOSL, C5)} Let $k$ be a positive integer. The organising commitee of a tennis tournament is to schedule the matches for $2k$ players so that every two players play once, each day exactly one match is played, and each player arrives to the tournament site the day of his first match, and departs the day of his last match. For every day a player is present on the tournament, the committee has to pay $1$ coin to the hotel. The organisers want to design the schedule so as to minimise the total cost of all players' stays. Determine this minimum cost.
+
+\textbf{755. (\color{red}d9\color{black}, 2019 Leaked RMM, P5 of 6)} Two ants are moving along the edges of a convex polyhedron. The route of every ant ends in its starting point, so that one ant does not pass through the same point twice along its way. On every face $F$ of the polyhedron are written the number of edges of $F$ belonging to the route of the first ant and the number of edges of $F$ belonging to the route of the second ant. Is there a polyhedron and a pair of routes described as above, such that only one face contains a pair of distinct numbers?
+
+\textbf{720. (\color{red}d9\color{black}, Cayley's Formula)} Prove that the number of trees on $n$ labelled vertices is $n^{n-2}.$
+
+\textbf{699. (\color{red}d9\color{black}, 2008 USAMO, P3 of 6)} Let $n$ be a positive integer. Denote by $S_n$ the set of points $(x, y)$ with integer coordinates such that\[ \left\lvert x\right\rvert + \left\lvert y + \frac{1}{2} \right\rvert < n. \] A path is a sequence of distinct points $(x_1 , y_1), \ldots, (x_\ell, y_\ell)$ in $S_n$ such that, for $i = 2, \ldots, \ell$, the distance between $(x_i , y_i)$ and $(x_{i-1} , y_{i-1} )$ is $1.$ Prove that the points in $S_n$ cannot be partitioned into fewer than $n$ paths.
+
+\textbf{698. (\color{red}d9\color{black}, 2012 IMOSL, C5)} The columns and the row of a $3n \times 3n$ square board are numbered $1,2,\ldots ,3n$. Every square $(x,y)$ with $1 \leq x,y \leq 3n$ is colored asparagus, byzantium or citrine according as the modulo $3$ remainder of $x+y$ is $0,1$ or $2$ respectively. One token colored asparagus, byzantium or citrine is placed on each square, so that there are $3n^2$ tokens of each color.
+Suppose that one can permute the tokens so that each token is moved to a distance of at most $d$ from its original position, each asparagus token replaces a byzantium token, each byzantium token replaces a citrine token, and each citrine token replaces an asparagus token. Prove that it is possible to permute the tokens so that each token is moved to a distance of at most $d+2$ from its original position, and each square contains a token with the same color as the square.
+
+\textbf{649. (\color{red}d9\color{black}, 2014 IMOSL, C7)} Let $M$ be a set of $n \ge 4$ points in the plane, no three of which are collinear. Initially these points are connected with $n$ segments so that each point in $M$ is the endpoint of exactly two segments. Then, at each step, one may choose two segments $AB$ and $CD$ sharing a common interior point and replace them by the segments $AC$ and $BD$ if none of them is present at this moment. Prove that it is impossible to perform $n^3 /4$ or more such moves.
+
+\textbf{579. (\color{red}d9\color{black}, 2016 ELMO, P3 of 6)} In a Cartesian coordinate plane, call a rectangle $standard$ if all of its sides are parallel to the $x$- and $y$- axes, and call a set of points $nice$ if no two of them have the same $x$- or $y$- coordinate. First, Bert chooses a nice set $B$ of $2016$ points in the coordinate plane. To mess with Bert, Ernie then chooses a set $E$ of $n$ points in the coordinate plane such that $B\cup E$ is a nice set with $2016+n$ points. Bert returns and then miraculously notices that there does not exist a standard rectangle that contains at least two points in $B$ and no points in $E$ in its interior. For a given nice set $B$ that Bert chooses, define $f(B)$ as the smallest positive integer $n$ such that Ernie can find a nice set $E$ of size $n$ with the aforementioned properties. Help Bert determine the minimum and maximum possible values of $f(B)$.
+
+\textbf{578. (\color{red}d9\color{black}, 2017 RMM, P3 of 6)} Let $n$ be an integer greater than $1$ and let $X$ be an $n$-element set. A non-empty collection of subsets $A_1, ..., A_k$ of $X$ is tight if the union $A_1 \cup \cdots  \cup A_k$ is a proper subset of $X$ and no element of $X$ lies in exactly one of the $A_i$s. Find the largest cardinality of a collection of proper non-empty subsets of $X$, no non-empty subcollection of which is tight.
+\smallbreak
+Note. A subset $A$ of $X$ is proper if $A\neq X$. The sets in a collection are assumed to be distinct. The whole collection is assumed to be a subcollection.
+
+\textbf{537. (\color{red}d9\color{black}, 2014 IMOSL, C6)} We are given an infinite deck of cards, each with a real number on it. For every real number $x$, there is exactly one card in the deck that has $x$ written on it. Now two players draw disjoint sets $A$ and $B$ of $100$ cards each from this deck. We would like to define a rule that declares one of them a winner. This rule should satisfy the following conditions:
+\begin{enumerate}
+        \item The winner only depends on the relative order of the $200$ cards: if the cards are laid down in increasing order face down and we are told which card belongs to which player, but not what numbers are written on them, we can still decide the winner.
+        \item If we write the elements of both sets in increasing order as $A =\{ a_1 , a_2 , \ldots, a_{100} \}$ and $B= \{ b_1 , b_2 , \ldots , b_{100} \}$, and $a_i > b_i$ for all $i$, then $A$ beats $B$.
+        \item If three players draw three disjoint sets $A, B, C$ from the deck, $A$ beats $B$ and $B$ beats $C$ then $A$ also beats $C$.
+\end{enumerate}
+How many ways are there to define such a rule? Here, we consider two rules as different if there exist two sets $A$ and $B$ such that $A$ beats $B$ according to one rule, but $B$ beats $A$ according to the other.
+
+
+\textbf{517. (\color{red}d9\color{black}, 2020 RMM, P3 of 6)} Let $n\ge 3$ be an integer. In a country there are $n$ airports and $n$ airlines operating two-way flights. For each airline, there is an odd integer $m\ge 3$, and $m$ distinct airports $c_1, \dots, c_m$, where the flights offered by the airline are exactly those between the following pairs of airports: $c_1$ and $c_2$; $c_2$ and $c_3$; $\dots$ ; $c_{m-1}$ and $c_m$; $c_m$ and $c_1$.
+
+Prove that there is a closed route consisting of an odd number of flights where no two flights are operated by the same airline.
+
+\textbf{508. (\color{red}d9\color{black}, Kőnig's theorem)} In a bipartite graph, let $m$ be the maximum number of disjoint edges that can be chosen from the graph, and let $n$ be the minimum number of vertices that can be chosen from the graph such that every edge has a chosen vertex as an endpoint. Show that $m=n$.
+
+\textbf{495. (\color{red}d9\color{black}, 2014 ELMO, P6 of 6)} A $2^{2014} + 1$ by $2^{2014} + 1$ grid has some black squares filled. The filled black squares form one or more snakes on the plane, each of whose heads splits at some points but never comes back together. In other words, for every positive integer $n$ greater than $2$, there do not exist pairwise distinct black squares $s_1$, $s_2$, \dots, $s_n$ such that $s_i$ and $s_{i+1}$ share an edge for $i=1,2, \dots, n$ (here $s_{n+1}=s_1$).
+\smallbreak
+What is the maximum possible number of filled black squares?
+
+\textbf{481. (\color{red}d9\color{black}, 2017 IMOSL C7)} For any finite sets $X$ and $Y$ of positive integers, denote by $f_X(k)$ the $k^{\text{th}}$ smallest positive integer not in $X,$ and let $$X*Y=X\cup \{ f_X(y):y\in Y\}.$$ Let $A$ be a set of $a > 0$ positive integers and let $B$ be a set of $b > 0$ positive integers. Prove that if $A*B=B*A$ then $$\underbrace{A*(A*\cdots (A*(A*A))\cdots )}_{\text{ A appears $b$ times}}=\underbrace{B*(B*\cdots (B*(B*B))\cdots )}_{\text{ B appears $a$ times}}.$$
+
+\textbf{452. (\color{red}d9\color{black}, 2007 IMO P3)} In a mathematical competition some competitors are friends. Friendship is always mutual. Call a group of competitors a clique if each two of them are friends. (In particular, any group of fewer than two competitiors is a clique.) The number of members of a clique is called its size.
+
+Given that, in this competition, the largest size of a clique is even, prove that the competitors can be arranged into two rooms such that the largest size of a clique contained in one room is the same as the largest size of a clique contained in the other room.
+
+\textbf{439. (\color{red}d9\color{black}, 2012 IMO P3)} The $\textit{liar's guessing game}$ is a game played between two players $A$ and $B.$ The rules of the game depend on two positive integers $k$ and $n$ which are known to both players.
+\smallbreak
+At the start of the game $A$ chooses integers $x$ and $N$ with $1 \leq x \leq N.$ Player $A$ keeps $x$ secret, and truthfully tells $N$ to player $B.$ Player $B$ now tries to obtain information about $x$ by asking player $A$ questions as follows: each question consists of $B$ specifying an arbitrary set $S$ of positive integers (possibly one specified in some previous question), and asking $A$ whether $x$ belongs to $S.$ Player $B$ may ask as many questions as he wishes. After each question, player $A$ must immediately answer it with $\textit{yes}$ or $\textit{no},$ but is allowed to lie as many times as she wants; the only restriction is that, among any $k + 1$ consecutive answers, at least one answer must be truthful.
+\smallbreak
+After $B$ has asked as many questions as he wants, he must specify a set $X$ of at most $n$ positive integers. If $x$ belongs to $X,$ then $B$ winds; otherwise, he loses. Prove that:
+\begin{enumerate}
+        \item If $n \geq 2^k,$ then $B$ can guarantee a win.
+        \item For all sufficiently large $k,$ there exists an integer $n \geq (1.99)^k$ such that $B$ cannot guarantee a win.
+\end{enumerate}
+
+\textbf{432. (\color{red}d9\color{black}, 2018 RMM Shortlist, C4)} Let $k$ and $s$ be positive integers such that $s<(2k + 1)^2$. Initially, one cell out of an $n \times n$ grid is coloured green. On each turn, we pick some green cell $c$ and colour green some $s$ out of the $(2k + 1)^2$ cells in the $(2k + 1) \times (2k + 1)$ square centred at $c$. No cell may be coloured green twice. We say that $s$ is $k-sparse$ if there exists some positive number $C$ such that, for every positive integer $n$, the total number of green cells after any number of turns is always going to be at most $Cn$. Find, in terms of $k$, the least $k$-sparse integer $s$.
+
+
+\textbf{425. (\color{red}d9\color{black}, 2011 IMOSL C6)} Let $n$ be a positive integer, and let $W = \ldots x_{-1}x_0x_1x_2 \ldots$ be an infinite periodic word, consisting of just letters $a$ and/or $b$. Suppose that the minimal period $N$ of $W$ is greater than $2^n$.
+
+A finite nonempty word $U$ is said to appear in $W$ if there exist indices $k \leq \ell$ such that $U=x_k x_{k+1} \ldots x_{\ell}$. A finite word $U$ is called ubiquitous if the four words $Ua$, $Ub$, $aU$, and $bU$ all appear in $W$. Prove that there are at least $n$ ubiquitous finite nonempty words.
+
+\textbf{418. (\color{red}d9\color{black}, 2019 China TST P6)} Let $k$ be a positive real. $A$ and $B$ play the following game: at the start, there are $80$ zeroes arranged around a circle. Each turn, $A$ increases some of these $80$ numbers, such that the total sum added is 1. Next, $B$ selects the ten consecutive numbers with the largest sum, and reduces them all to $0.$ $A$ then wins the game if she can ensure that at least one of the numbers is $\geq k$ at some point in time.
+\smallbreak
+Determine all $k$ such that $A$ can always win the game.
+
+\textbf{398. (\color{red}d9\color{black}, 2013 USAMO, P3 of 6)} Let $n$ be a positive integer. There are $\frac{n(n+1)}{2}$ marks, each with a black side and a white side, arranged into an equilateral triangle, with the biggest row containing $n$ marks. Initially, each mark has the black side up. An operation is to choose a line parallel to the sides of the triangle, and flipping all the marks on that line. A configuration is called \textit{admissible} if it can be obtained from the initial configuration by performing a finite number of operations. For each admissible configuration $C$, let $f(C)$ denote the smallest number of operations required to obtain $C$ from the initial configuration. Find the maximum value of $f(C)$, where $C$ varies over all admissible configurations.
+
+\textbf{376. (\color{red}d9\color{black}, 2018 USA TSTST P9 of 9)} Show that there is an absolute constant $c < 1$ with the following property: whenever $P$ is a polygon with area $1$ in the plane, one can translate it by a distance of $\frac{1}{100}$ in some direction to obtain a polygon $Q,$ for which the intersection of the interiors of $P$ and $Q$ has total area at most $c.$
+
+\textbf{362. (\color{red}d9\color{black}, 2007 USAMO P3 of 6)} Let $S$ be a set containing $n^2 + n - 1$ elements for some positive integer $n.$ Suppose that the $n$-element subsets of $S$ are partitioned into two classes. Prove that there are $n$ pairwise disjoint sets in the same class.
+
+\textbf{341. (\color{red}d9\color{black}, 2012 USA TSTST, P3 of 9)} Given a set $S$ of $n$ variables, a binary operation $\times$ on $S$ is called \textit{simple} if it satisfies $(x \times y) \times z = x \times (y \times z)$ for all $x, y, z \in S$ and $x \times y \in \{x, y\}$ for all $x, y \in S.$ Given a simple operation $\times$ on $S,$ any string of elements in $S$ can be reduced to a single element, such as $xyz \to x \times (y \times z).$ A string of variables in S is called \textit{full} if it contains each variable in $S$ at least once, and two strings are \textit{equivalent} if they evaluate to the same variable regardless of which simple $\times$ is chosen. For example $xxx, xx,$ and $x$ are equivalent, but these are only full if $n = 1.$ Suppose that $T$ is a set of strings such that any full string is equivalent to exactly one element of $T.$ Determine the number of elements of $T.$
+
+\textbf{335. (\color{red}d9\color{black}, 2019–2020 ICMC Round 2, P4 of 4)} Let $ \mathcal{S} = \{S_1, S_2, \dots, S_n\} $ be a set of $ n $ distinct points on the Euclidean plane, no three of which are collinear. Andy the ant starts at some point $ S_{i_1} $ in $ \mathcal{S} $ and wishes to visit a series of $ m $ points $ \{S_{i_1}, S_{i_2}, \dots, S_{i_m}\} \subseteq \mathcal{S} $ in order, such that $ i_j > i_k $ whenever $ j > k $. It is known that ants can only travel in straight lines between two points in $ \mathcal{S} $, and that an ant's path can never self-intersect.
+\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\theenumi}{\roman{enumi})}
+\begin{enumerate}
+        \item Prove that Andy can always fulfil his wish if there are $ n = 2^m $ points in $ \mathcal{S} $.
+        \item Can Andy can always fulfil his wish if there are $ n = m^2 $ points in $ \mathcal{S} $?
+\end{enumerate}
+
+\textbf{320. (\color{red}d9\color{black}, 2019 USA TSTST Q3 of 9)} On an infinite square grid we place finitely many $\textit{cars},$ which each occupy a single cell and face in one of the four cardinal directions. Cars may never occupy the same cell. It is given that the cell immediately in front of each car is empty, and moreover no two cars face towards each other in the same row or column (no right-facing car is to the left of a left-facing car within a row, etc.). In a $\textit{move},$ one chooses a car and shifts it one cell forward to a vacant cell. Prove that there exists an infinite sequence of valid moves using each car infinitely many times.
+
+\textbf{299. (\color{red}d9\color{black}, A theorem of Erdos-Ko-Rado)} Positive integers $n > 2k$ are given. Consider a family $A$ of subsets of $\{1, 2, \dots, n\},$ each of size $k,$ such that no two are disjoint. Prove that $$\lvert A \rvert \leq \binom{n - 1}{k - 1}$$ Show that for any family $A$ with equality there must exist an element $x \in \{1, 2, \dots, n\}$ which appears in all the subsets in $A.$
+
+\textbf{264. (\color{red}d9\color{black}, 2010 USA TST Q6 of 9)} Let $T$ be a finite set of positive integers greater than 1. A subset $S$ of $T$ is called $\textit{good}$ if for every $t \in T$ there exists some $s \in S$ with $\text{gcd}(s, t) > 1.$ Prove that the number of good subsets of $T$ is odd.
+
+\textbf{138. (\color{red}d9\color{black}, 2015 IMO, P6 of 6)} The sequence $a_1,a_2,\dots$ of integers satisfies the conditions:
+
+(i) $1\le a_j\le2015$ for all $j\ge1$,
+(ii) $k+a_k\neq \ell+a_\ell$ for all $1\le k<\ell$.
+
+Prove that there exist two positive integers $b$ and $N$ for which\[\left\vert\sum_{j=m+1}^n(a_j-b)\right\vert\le1007^2\]for all integers $m$ and $n$ such that $n>m\ge N$.
+
+\textbf{120. (\color{red}d9\color{black}, 2019 USA TST, P3 of 6)} A game of snake with the usual rules is played in an $n \times n$ grid. For sufficiently large n, is it possible that a snake of length at least $0.9n^2$ can be placed in the grid that after some amount of time the snake is in the same position, but in the opposite orientation? (i.e. the head is now where the tail was and vice versa)
+
+\textbf{1322. (\color{red}d10\color{black}, 2022 USA TSTST, P9 of 9)} Let $k>1$ be a fixed positive integer. Prove that if $n$ is a sufficiently large positive integer, there exists a sequence of integers with the following properties:
+\begin{itemize}
+        \item Each element of the sequence is between $1$ and $n$, inclusive.
+        \item For any two different contiguous subsequence of the sequence with length between $2$ and $k$ inclusive, the multisets of values in those two subsequences is not the same.
+        \item The sequence has length at least $0.499n^2$
+\end{itemize}
+
+\textbf{1280. (\color{red}d10\color{black}, 2021 IMOSL, C8)} Determine the largest integer $N$ for which there exists a table $T$ of integers with $N$ rows and $100$ columns that has the following properties:
+$\text{(i)}$ Every row contains the numbers $1$, $2$, $\ldots$, $100$ in some order.
+$\text{(ii)}$ For any two distinct rows $r$ and $s$, there is a column $c$ such that $|T(r,c) - T(s, c)|\geq 2$. (Here $T(r,c)$ is the entry in row $r$ and column $c$.)
+
+\textbf{979. (\color{red}d10\color{black}, IMOSL 2009 C8)} For any integer $n\geq 2$, we compute the integer $h(n)$ by applying the following procedure to its decimal representation. Let $r$ be the rightmost digit of $n$.
+If $r=0$, then the decimal representation of $h(n)$ results from the decimal representation of $n$ by removing this rightmost digit $0$.
+If $1\leq r \leq 9$ we split the decimal representation of $n$ into a maximal right part $R$ that solely consists of digits not less than $r$ and into a left part $L$ that either is empty or ends with a digit strictly smaller than $r$. Then the decimal representation of $h(n)$ consists of the decimal representation of $L$, followed by two copies of the decimal representation of $R-1$. For instance, for the number $17,151,345,543$, we will have $L=17,151$, $R=345,543$ and $h(n)=17,151,345,542,345,542$.
+Prove that, starting with an arbitrary integer $n\geq 2$, iterated application of $h$ produces the integer $1$ after finitely many steps.
+
+\textbf{951. (\color{red}d10\color{black}, Folklore)} Does there exist an infinite subset $X$ of $\mathbb{R}$ such that the only order-preserving injection $X \to X$ is the identity? (An order-preserving injection $X \to X$ is a strictly increasing injection $X \to X$.) .
+
+\textbf{888. (\color{red}d10\color{black}, 2020 IMOSL, C7)} Consider any rectangular table having finitely many rows and columns, with a real number $a(r, c)$ in the cell in row $r$ and column $c$. A pair $(R, C)$, where $R$ is a set of rows and $C$ a set of columns, is called a saddle pair if the following two conditions are satisfied:\\
+(i) For each row $r^{\prime}$, there is $r \in R$ such that $a(r, c) \geq a\left(r^{\prime}, c\right)$ for all $c \in C$;\\
+(ii) For each column $c^{\prime}$, there is $c \in C$ such that $a(r, c) \leq a\left(r, c^{\prime}\right)$ for all $r \in R$. \\
+
+A saddle pair $(R, C)$ is called a minimal pair if for each saddle pair $\left(R^{\prime}, C^{\prime}\right)$ with $R^{\prime} \subseteq R$ and $C^{\prime} \subseteq C$, we have $R^{\prime}=R$ and $C^{\prime}=C$.\\
+Prove that any two minimal pairs contain the same number of rows.
+
+\textbf{741. (\color{red}d10\color{black}, 2014 IMO, P6 of 6)} A set of lines in the plane is in general position if no two are parallel and no three pass through the same point. A set of lines in general position cuts the plane into regions, some of which have finite area; we call these its finite regions. Prove that for all sufficiently large $n$, in any set of $n$ lines in general position it is possible to colour at least $\sqrt{n}$ lines blue in such a way that none of its finite regions has a completely blue boundary.
+
+\textbf{706. (\color{red}d10\color{black}, 2015 RMM, P6 of 6)} Given a positive integer $n$, determine the largest real number $\mu$ satisfying the following condition: for every set $C$ of $4n$ points in the interior of the unit square $U$, there exists a rectangle $T$ contained in $U$ such that
+
+$\bullet$ the sides of $T$ are parallel to the sides of $U$;
+
+$\bullet$ the interior of $T$ contains exactly one point of $C$;
+
+$\bullet$ the area of $T$ is at least $\mu$.
+
+\textbf{685. (\color{red}d10\color{black}, 2019 BalkanMO SL, C4)} Vlad the Impaler likes to entomb his enemies underneath his castle in a network of $2N$ torture chambers, each with three doors. These are connected by a number of corridors, which only meet at the torture chambers, but can pass over and around each other with staircases and tunnels.
+
+Dan III of Wallachia wakes up in one corridor, and starts crawling in one direction, trying to escape. So that he doesn't get lost, whenever he arrives at a torture chamber, he always exists through the door to the left of the door he entered. Eventually, Dan realises that he has passed down every corridor in both directions (and so knows he cannot escape). For which values of $N$ is this possible?
+
+\textbf{671. (\color{red}d10\color{black}, Minkowski's Theorem)} Given a centrally symmetric convex set about the origin $S$ in $\mathbb{R}^n$ with volume greater than $2^n$, show that $S$ contains a lattice point other than the origin.
+
+\textbf{601. (\color{red}d10\color{black}, 2017 IMO, P3)} A hunter and an invisible rabbit play a game in the Euclidean plane. The rabbit's starting point, $A_0$, and the hunter's starting point, $B_0$ are the same. After $n-1$ rounds of the game, the rabbit is at point $A_{n-1}$ and the hunter is at point $B_{n-1}$. In the $n^{\text{th}}$ round of the game, three things occur in order:
+
+
+
+\begin{enumerate}
+
+        \item The rabbit moves invisibly to a point $A_n$ such that the distance between $A_{n-1}$ and $A_n$ is exactly $1$.
+
+
+
+        \item A tracking device reports a point $P_n$ to the hunter. The only guarantee provided by the tracking device to the hunter is that the distance between $P_n$ and $A_n$ is at most $1$.
+
+
+
+        \item The hunter moves visibly to a point $B_n$ such that the distance between $B_{n-1}$ and $B_n$ is exactly $1$.
+
+\end{enumerate}
+
+Is it always possible, no matter how the rabbit moves, and no matter what points are reported by the tracking device, for the hunter to choose her moves so that after $10^9$ rounds, she can ensure that the distance between her and the rabbit is at most $100$?
+
+\textbf{587. (\color{red}d10\color{black}, 2011 IMO, P2 of 6)} Let $\mathcal{S}$ be a finite set of at least two points in the plane. Assume that no three points of $\mathcal S$ are collinear. A \textit{windmill} is a process that starts with a line $\ell$ going through a single point $P \in \mathcal S$. The line rotates clockwise about the pivot $P$ until the first time that the line meets some other point belonging to $\mathcal S$. This point, $Q$, takes over as the new pivot, and the line now rotates clockwise about $Q$, until it next meets a point of $\mathcal S$. This process continues indefinitely.
+Show that we can choose a point $P$ in $\mathcal S$ and a line $\ell$ going through $P$ such that the resulting windmill uses each point of $\mathcal S$ as a pivot infinitely many times.
+
+\textbf{580. (\color{red}d10\color{black}, 2013 IMO, P6 of 6)} Let $n \ge 3$ be an integer, and consider a circle with $n + 1$ equally spaced points marked on it. Consider all labellings of these points with the numbers $0, 1, ... , n$ such that each label is used exactly once; two such labellings are considered to be the same if one can be obtained from the other by a rotation of the circle. A labelling is called beautiful if, for any four labels $a < b < c < d$ with $a + d = b + c$, the chord joining the points labelled $a$ and $d$ does not intersect the chord joining the points labelled $b$ and $c$.
+\smallbreak
+Let $M$ be the number of beautiful labelings, and let N be the number of ordered pairs $(x, y)$ of positive integers such that $x + y \le n$ and $\gcd(x, y) = 1$. Prove that $$M = N + 1.$$
+
+\textbf{572. (\color{red}d10\color{black}, 2019 IMOSL, C8)} Alice has a map of Wonderland, a country consisting of $n \geq 2$ towns. For every pair of towns, there is a narrow road going from one town to the other. One day, all the roads are declared to be “one way” only. Alice has no information on the direction of the roads, but the King of Hearts has offered to help her. She is allowed to ask him a number of questions. For each question in turn, Alice chooses a pair of towns and the King of Hearts tells her the direction of the road connecting those two towns.
+\smallbreak
+Alice wants to know whether there is at least one town in Wonderland with at most one outgoing road. Prove that she can always find out by asking at most $4n$ questions.
+
+\textbf{523. (\color{red}d10\color{black}, 2015 IMOSL, C6)} Let $S$ be a nonempty set of positive integers. We say that a positive integer $n$ is clean if it has a unique representation as a sum of an odd number of distinct elements from $S$. Prove that there exist infinitely many positive integers that are not clean.
+
+\textbf{411. (\color{red}d10\color{black}, 2012 IMOSL C7)} There are given $2^{500}$ points on a circle labeled $1,2,\ldots ,2^{500}$ in some order. Prove that one can choose $100$ pairwise disjoint chords joining some of theses points so that the $100$ sums of the pairs of numbers at the endpoints of the chosen chord are equal.
+
+\textbf{384. (\color{red}d10\color{black}, 2015 IMOSL C7)} In a company of people some pairs are enemies. A group of people is called \textit{unsociable} if the number of members in the group is odd and at least $3$, and it is possible to arrange all its members around a round table so that every two neighbors are enemies. Given that there are at most $2015$ unsociable groups, prove that it is possible to partition the company into $11$ parts so that no two enemies are in the same part.
+
+\textbf{383. (\color{red}d10\color{black}, 2008 USAMO, P6 of 6)} At a certain mathematical conference, every pair of mathematicians are either friends or strangers. At mealtime, every participant eats in one of two large dining rooms. Each mathematician insists upon eating in a room which contains an even number of his or her friends. Prove that the number of ways that the mathematicians may be split between the two rooms is a power of two.
+
+\textbf{377. (\color{red}d10\color{black}, 2016 IMOSL C8)} Let $n$ be a positive integer. Determine the smallest positive integer $k$ with the following property: it is possible to mark $k$ cells on a $2n \times 2n$ board so that there exists a unique partition of the board into $1 \times 2$ and $2 \times 1$ dominoes, none of which contain two marked cells.
+
+\textbf{363. (\color{red}d10\color{black}, 2020 USA TST P3 of 6)} Let $\alpha \geq 1$ be a real number. Hephaestus and Poseidon play a turn-based game on an infinite grid of unit squares. Before the game starts, Poseidon chooses a finite number of cells to be \textit{flooded}. Hephaestus is building a \textit{levee}, which is a subset of unit edges of the grid (called \textit{walls}) forming a connected, non-self-intersecting path or loop.
+
+The game then begins with Hephaestus moving first. On each of Hephaestus's turns, he adds one or more walls to the levee, as long as the total length of the levee is at most $\alpha n$ after his $n$th turn. On each of Poseidon's turns, every cell which is adjacent to an already flooded cell and with no wall between them becomes flooded as well. Hephaestus wins if the levee forms a closed loop such that all flooded cells are contained in the interior of the loop - hence stopping the flood and saving the world. For which $\alpha$ can Hephaestus guarantee victory in a finite number of turns no matter how Poseidon chooses the initial cells to flood?
+
+\textbf{306. (\color{red}d10\color{black}, USAMO 2010, P6 of 6)} A blackboard contains 68 pairs of nonzero integers. Suppose that for each positive integer $k$ at most one of the pairs $(k, k)$ and $(-k, -k)$ is written on the blackboard. A student erases some of the 136 integers, subject to the condition that no two erased integers may add to 0. The student then scores one point for each of the 68 pairs in which at least one integer is erased. Determine, with proof, the largest number $N$ of points that the student can guarantee to score regardless of which 68 pairs have been written on the board.
+
+\textbf{237. (\color{red}d10\color{black}, Redei's Theorem)} Prove that the number of Hamiltonian paths in a complete directed graph is odd.
+
+\textbf{188. (\color{red}d10\color{black}, 2019 RMM, P3 of 6 )} Given any positive real number $\varepsilon$, prove that, for all but finitely many positive integers $v$, any graph on $v$ vertices with at least  $(1+\varepsilon)v$ edges has two distinct simple cycles of equal lengths.
+(Recall that the notion of a simple cycle does not allow repetition of vertices in a cycle.)
+
+\textbf{132. (\color{red}d10\color{black}, 2019 APMO P4 of 5   )} Consider a $2018 \times 2019$ board with integers in each unit square. Two unit squares are said to be neighbours if they share a common edge. In each turn, you choose some unit squares. Then for each chosen unit square the average of all its neighbours is calculated. Finally, after these calculations are done, the number in each chosen unit square is replaced by the corresponding average. Is it always possible to make the numbers in all squares become the same after finitely many turns?
+
+\textbf{552. (\color{red}d11\color{black}, 2019 IMOSL, C9)} For any two different real numbers $x$ and $y$, we define $D(x,y)$ to be the unique integer $d$ satisfying $2^d\le |x-y| < 2^{d+1}$. Given a set of reals $\mathcal F$, and an element $x\in \mathcal F$, we say that the [i]scales[/i] of $x$ in $\mathcal F$ are the values of $D(x,y)$ for $y\in\mathcal F$ with $x\neq y$. Let $k$ be a given positive integer.
+
+Suppose that each member $x$ of $\mathcal F$ has at most $k$ different scales in $\mathcal F$ (note that these scales may depend on $x$). What is the maximum possible size of $\mathcal F$?
+
+\textbf{482. (\color{red}d11\color{black}, 2020 CMC, P4 of 8)} Let $n$ be an odd positive integer. Some of the unit squares of an $n \times n$ unit-square board are colored green. It turns out that a chess king can travel from any green unit square to any other green unit squares by a finite series of moves that visit only green unit squares along the way. Prove that it can always do so in at most $\frac 12 (n^2-1)$ moves. (In one move, a chess king can travel from one unit square to another if and only if the two unit squares share either a corner or a side.)
+
+\textbf{391. (\color{red}d11\color{black}, 2015 USA TSTST, P6 of 6)} A \emph{Nim-style game} is defined as follows. Two positive integers $k$ and $n$ are specified, along with a finite set $S$ of $k$-tuples of integers (not necessarily positive). At the start of the game, the $k$-tuple $(n, 0, 0, \ldots, 0)$ is written on the blackboard.\\[5pt]
+A legal move consists of erasing the tuple $(a_1,a_2, \ldots,a_k)$ which is written on the blackboard and replacing it with $(a_1+b_1, a_2+b_2,  \ldots, a_k+b_k)$, where $(b_1, b_2,  \ldots, b_k)$ is an element of the set $S$. Two players take turns making legal moves, and the first to write a negative integer loses. In the event that neither player is ever forced to write a negative integer, the game is a draw.\\[5pt]
+Prove that there is a choice of $k$ and $S$ with the following property: the first player has a winning strategy if $n$ is a power of 2, and otherwise the second player has a winning strategy.
+
+\textbf{349. (\color{red}d11\color{black}, 2017 IMOSL C8)} Let $n$ be a given positive integer. In the Cartesian plane, each lattice point with nonnegative coordinates initially contains a butterfly, and there are no other butterflies. The neighborhood of a lattice point $c$ consists of all lattice points within the axis-aligned $(2n+1) \times (2n+1)$ square entered at $c$, apart from $c$ itself. We call a butterfly lonely, crowded, or comfortable, depending on whether the number of butterflies in its neighborhood $N$ is respectively less than, greater than, or equal to half of the number of lattice points in $N$. Every minute, all lonely butterflies fly away simultaneously. This process goes on for as long as there are any lonely butterflies. Assuming that the process eventually stops, determine the number of comfortable butterflies at the final state.
+
+\textbf{272. (\color{red}d11\color{black}, 2009 IMO, P6 of 6)} Let $ a_1, a_2, \ldots , a_n$ be distinct positive integers and let $ M$ be a set of $ n - 1$ positive integers not containing $ s = a_1 + a_2 + \ldots + a_n.$ A grasshopper is to jump along the real axis, starting at the point $ 0$ and making $ n$ jumps to the right with lengths $ a_1, a_2, \ldots , a_n$ in some order. Prove that the order can be chosen in such a way that the grasshopper never lands on any point in $ M.$
+
+\textbf{230. (\color{red}d11\color{black}, "Introductory Problems" by Imre Leader)} Does there exist a 3D lattice cycle (a loop formed by segments of length $1$ with endpoints in $\mathbb{Z}^3$) whose projections in the $x$, $y$, and $z$ directions are all trees?
+
+\textbf{174. (\color{red}d11\color{black}, Van De Waerden's Theorem)} Prove that for any $r, k , \in \mathbb N$, there is an integer $N$ such that no matter how the numbers $1$ to $N$ are coloured with $r$ colours, there is a monochromatic arithmetic progression of length $k$.
+
+\textbf{1252. (\color{red}d12\color{black}, Unknown)} 3 people are each wearing a hat with a random real number written on. Simultaneously they each write down a finite list of guesses to the number on their own hat. They may discuss strategy beforehand and can see each others' hats; can they guarantee at least one person guesses correctly the number on their own hat?
+
+\textbf{573. (\color{red}d12\color{black}, Folklore)} There are $n$ people. Each person has some information. People communicate via 2-way telephone calls, exchanging all information on each call. What is the minimum number of calls for everyone to know every piece of information?
+
+\textbf{489. (\color{red}d12\color{black}, A result of Tan and Zhang)} What is the maximum number of turns that a Hamilton cycle in a $202020 \times 202$ grid can have?
+
+\textbf{454. (\color{red}d12\color{black}, A result of Danzer and Grünbaum)} Prove that any set of $2^d+1$ points in $d$-dimensional space contains three points which form an obtuse triangle.
+
+\textbf{286. (\color{red}d12\color{black}, A theorem of Nash-Williams)} Let $G$ be a graph with $2n+1$ vertices such that all vertices have degree $n$. Show that $G$ has a Hamiltonian circuit.
+
+\textbf{258. (\color{red}d12\color{black}, A conjecture of Erdos)} Let $2r \leq n$ be positive integers. What is the maximum size of any set of $n$-digit binary strings, no two of which differ in more than $2r$ places?
+
+\textbf{447. (\color{red}d13\color{black}, Smetaniuk's Theorem)} For any $n \times n$ square with less than $n$ numbers from $1$ to $n$ filled in, no two numbers in the same row or column equal, is it always possible to fill in the rest of the square to form a Latin square?
+
+\textbf{265. (\color{red}d13\color{black}, The slope problem)} Prove that any $n$ points in the plane, not all collinear, determine at least $n-1$ slopes, and find all $n$ which equality can occur.
+
+\textbf{209. (\color{red}d13\color{black}, The Friendship Theorem)} Among some people, every pair of people have a unique common friend. Prove someone is everyone's friend.
+
+
+
+\textbf{7. (\color{red}dT\color{black}, 2019 AFMO, Q3)} Suppose there are a line of prisoners, each of whom is wearing either a green or red hat. Any individual prisoner can see all the infinitely many prisoners and hats in front of them but none of the finitely many prisoners or hats behind them. They also can't see their own hat. In these circumstances, each prisoner then guesses the colour of their hat by writing it down, and the prison warden sets free any prisoner who correctly guesses the colour of their own hat. Assuming that the prisoners use the best strategy possible, what is the maximum guaranteed density of prisoners set free?
+
+\end{document}

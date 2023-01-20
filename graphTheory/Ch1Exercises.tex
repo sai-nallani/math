@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts} 
+\title{Graph Theory Chapter 1 Exercises}
+
+\begin{document}
+
+\maketitle
+1. \textbf{What is the number of edges in a $K^n$?}
+Since there are $n$ vertices, $|E(K^n)| = |[V]^2| = \binom{n}{2} =
+    \frac{n!}{(n-2)!2!} = \frac{n(n-1)}{2}$.
+
+2. \textbf{Let $d \in \mathbb{N}$ and $V := \{0, 1\}^d$; thus, $V$ is the
+    set of all $0$-$1$ sequences of length $d$. The graph on $V$ in which
+    two such sequences form an edge if and only if they differ in exactly one position
+    is called the \emph{$d$-dimensional cube}. Determine the average degree, number of
+    edges, diameter, girth, and circumference of this graph.} Each vertex $v \in V$
+has $d$ neighbors because there are $d$ positions where the sequence can vary exactly
+once. Since there are $2^d$ vertices, and each vertex has $d$ neighbors, there are
+$\frac{d2^d}{2} = d2^{d-1}$ edges. The average degree is $\frac{d2^n}{d} = d$. Notice
+that the distance between two vertices is the number of times their sequences
+differ at a position. Two sequences can differ at position $i$ atmost $d$ times.
+This means that the diameter is $d$.
+
+\end{document}
