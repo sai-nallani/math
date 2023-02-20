@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage{mdframed}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}{Proposition}[definition]
+\DeclareMathOperator*{\Dom}{Dom}
+\DeclareMathOperator*{\Rng}{Rng}
+\DeclareMathOperator*{\Cod}{Cod}
+\begin{document}
+
+\section{Functions}
+\begin{definition}
+    A \textbf{function} $f$ from a set $A$ to a set $B$,
+    denoted as $f : A \rightarrow B$, associates to each $a
+    \in A$ an element $f(a) \in B$. The set $A$ is called
+    the \textbf{domain} of $f$ and the set $B$ is called the
+    \textbf{codomain} of $f$. We let $\Dom(f)$ denote the 
+    domain of $f$ and $\Cod(f)$ denote the codomain of $f$.
+\end{definition}
+\begin{definition}
+    The \textbf{range} of a real-valued function $f$, denoted
+    $\Rng(f)$, is the set of values that $f$ outputs; that is,
+    \begin{center}
+        $\Rng(f) = \left\{ y \in \mathbb{R} \mid
+        y = f(x) \text{ for some } x \in \Dom(f) \right\} = 
+        \left\{ f(x) \mid x \in \Dom(f) \right\}$
+    \end{center}
+\end{definition}
+\begin{definition}
+    Let $f$ be a real-valued function. A real-valued function
+    $g$ is called an \textbf{inverse} of $f$ if $f(g(x)) = x$
+    for all $x \in \Dom(g)$ and $g(f(x)) = x$ for all $x \in 
+    \Dom(f)$. We denote this by $g = f^{-1}$.
+    \begin{proposition}
+    If $g$ is an inverse of $f$, or in other words
+    $g=f^{-1}$, then $\Dom(f) = \Rng(g)$ and 
+    $\Dom(g) = \Rng(f)$.    
+    \begin{center}
+        $g(f(x)) = x$ for all $x \in \Dom(f) \implies x \in
+        \Rng(g)$, so $\Dom(f) \subseteq \Rng(g)$.\\
+        If $y \in \Rng(g)$, then $y = g(x)$ for some 
+        $x \in \Dom(g)$, thus $f(y) = f(g(x)) = x$\\
+        Since $y \in \Dom(f)$, $\Rng(g) \subseteq \Dom(f)$ \\
+        By combining those two inclusions, we get $\Dom(f) = 
+        \Rng(g)$.\\
+        By symmetry of the definition of inverse functions,
+        $\Dom(g) = \Rng(f)$
+    \end{center}
+    \end{proposition}
+    \begin{proposition}
+        Show that the inverse of a function is unique.
+        \begin{center}
+            Let $g$ and $h$ be inverses of $f$.\\
+            By the above propostion, $\Dom(g) = \Rng(f) =
+            \Dom(h)$\\
+            Since $x \in \Rng(f)$, there is some $y \in Dom(f)$
+            such that $f(y) = x$\\
+            But then $g(x) = g(f(y)) = y = h(f(y)) = h(x)$\\
+            Therefore $g(x) = h(x)$
+        \end{center}
+    \end{proposition}
+\end{definition}
+\begin{definition}
+    Let $f$ be a function and $A \subseteq \Dom(f)$.
+    The \textbf{image} of $A$ under $f$, denoted $f(A)$,
+    is
+    \begin{center}
+        $f(A) = \left\{ y \in \Cod(f) \mid y = f(x) 
+        \text{ for some } x \in A \right\}$
+    \end{center}
+    Let $B \in \Cod(f)$. The \textbf{preimage} of $B$ under
+    $f$, denoetd $f^{-1}(B)$, is 
+    \begin{center}
+        $f^{-1}(B) = \left\{ x \in \Dom(f) \mid 
+        f(x) \in B \right\}$
+    \end{center}
+\end{definition}
+\end{document}
