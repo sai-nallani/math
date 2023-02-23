@@ -1,0 +1,38 @@
+\documentclass{article}
+
+\author{Sai Nallani}
+\title{Chapter 1: Groups}
+\begin{document}
+\maketitle
+A \textbf{group} is a pair $G = (G, *)$ consisting of a set of elements G, and
+a binary operation * on G, such that:
+\begin{enumerate}
+    \item G has an \textbf{identity element}, usually denoted $1_G$ or just
+          1, with the property that
+          \begin{center}
+              $1_G * g = g * 1_G = g$ for all $g \in G$.
+          \end{center}
+    \item The operation is associative, meaning $(a * b) * c = a * (b * c)$
+          for any $a, b, c \in G$. Consequently we generally don't write the
+          parantheses.
+    \item Each element $g \in G$ has an \textbf{inverse}, that is, an element
+          $h \in G$ such that
+          \begin{center}
+              $g * h = h * g = 1_G$
+          \end{center}
+\end{enumerate}
+
+For the symmetric group, the group elements are not the numbers, but the
+functions/permutations themselves.
+
+\textbf{Fact 1.2.3} Let $G$ be a group.
+\begin{enumerate}
+    \item The identity of a group is unique.
+          Let 1 and $1'$ are identities, then $1 = 1 * 1' = 1'$.
+    \item If $h$ and $h'$ are inverses to $g$, then $1_G = g * h \Rightarrow
+              h' = (h' * g) * h = 1_g * h = h$.
+    \item For any $g \in G$, $(g^{-1})^{-1} = g$
+          Let $h = g^{-1}$. $gh = 1_G$, $hh^{-1} = 1_G$, therefore $g=h^{-1}=(g^{-1})^{-1}$.
+
+\end{enumerate}
+\end{document}
