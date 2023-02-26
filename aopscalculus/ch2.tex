@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{mdframed}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}{Proposition}[definition]
+\DeclareMathOperator*{\Dom}{Dom}
+\DeclareMathOperator*{\Rng}{Rng}
+\DeclareMathOperator*{\Cod}{Cod}
+
+\title{Chapter 2, Limits and Continuity Notes}
+\begin{document}
+\maketitle
+\section{Limits}
+\begin{definition}
+    Let $f$ be a real-valued function. We say that the \textbf{limit} of $f(x)$ as $x$ approaches $a$ is $L$, or
+    \begin{center}
+        \[ \lim_{x \to a} f(x) \]
+    \end{center}
+    if, for all $\epsilon > 0$, there exists $\delta > 0$ such that if $x$ is within $\delta$
+    of $a$ (with $x \neq a$), then $f(x)$ is within $\epsilon$ of $L$. We write this more
+    precisely as
+    \begin{center}
+        \[ 0 < |x - a| < \delta \Rightarrow |f(x) - L| < \epsilon\],
+    \end{center}
+    where the "$\Rightarrow$" symbol means "implies":
+    \begin{center}
+        If $0 < |x - a| < \delta$, then $|f(x) - L| < \epsilon$.
+    \end{center}
+\end{definition}
+\end{document}
