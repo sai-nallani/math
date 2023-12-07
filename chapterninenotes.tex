@@ -1,0 +1,195 @@
+\documentclass{scrartcl}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[sexy]{evan}
+
+\title{Chapter 9 Notes: Inner Product Spaces}
+\author{Sai Nallani}
+
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\angb}[1]{\langle #1 \rangle}
+\begin{document}
+\maketitle
+
+All vector spaces in this section are finite dimensional over $\CC$. If $V$ is
+finite dimensional over $\RR$ or $\QQ$, the construction of inner product still works.
+But it doesn't work for finite dimensional vector spaces over finite fields.
+
+\begin{definition}
+    Let $V$ be a vector space. AN inner product on $V$ is a bilinear map $\la \cdot, \cdot
+        \ra: V \times V \to \CC$ satisfying the following axioms:
+    \begin{enumerate}
+        \item $\la \bu, \bu \ra > 0$ for all nonzero $\bu \in V$. (positive
+              definiteness)
+        \item $\la \bu, \bv \ra = \overline{\la \bv, \bu \ra}$ for all $\bu, \bv \in V$.
+              (conjugate symmetry)
+        \item $\angb{\bu+\bv, \mathbf{w}} = \angb{\bu, \mathbf{w}} + \angb{\bv, \mathbf{w}}$
+              (linearity)
+        \item $\angb{\alpha \bu, \bv} = \alpha \angb{\bu, \bv}$. (homogeneity in the
+              first argument)
+    \end{enumerate}
+\end{definition}
+
+Define an inner product on $V \cong \CC^n$, with vectors $\bu = (u_1, \dots, u_n)$, as
+\[\angb{\bu,\bv} = \sum_{i=1}^{n}{u_i\overline{v_i}}\]
+\begin{proof}
+    \begin{enumerate}
+        \item Assume $\bu \neq \mathbf{0}$. Then WLOG, $u_1 \neq 0$. $\angb{\bu, \bu} =
+                  \sum_{i=1}^{n}(u_i\overline{u_i}) \geq u_1\overline{u_1} > 0$.
+        \item Conjugate symmetry
+        \item Linearity and homogeneity
+    \end{enumerate}
+\end{proof}
+
+\begin{example}
+    Continuous functions $f: [-\pi, \pi] \to \CC$ form an inner product space with inner
+    product
+    \[ \angb{f, g} = \frac{1}{2\pi}\int_{-\pi}^{\pi}{f(x)\overline{g(x)}dx}\]
+\end{example}
+
+\section{Orthonormal bases}
+Out of all spanning sets for an inner product space $V$, a basis is the nicest in
+many ways. Out of all bases, orthonormal bases are the nicest.
+\begin{definition}
+    Let $B = \{e_1, \dots, e_n\}$ be a basis for a finite dimensional inner product space
+    $V$. $B$ is called an orthonormal basis if:
+    \[\angb{e_i, e_j} = \delta_{ij}\] for all $1 \leq i, j \leq n$.
+
+\end{definition}
+
+If $\bv = a_1e_1 + \cdots + a_ne_n$,
+\[\angb{\bv, e_j} = \sum_{i=1}^{n}{a_i\angb{e_i, e_j}} = a_j\]
+
+Fourier's formula:
+$\bv = \angb{\bv, e_1}e_1 + \cdots + \angb{\bv, e_n}e_n$.
+
+From this we have Parseval's identity:
+$\angb{\bv, \bv} = \sum_{i=1}^{n}{|\angb{\bv, e_i}|^2}$
+Prove by substituting by Fourier's formula and stuff.
+
+% \begin{example}
+%     \[\sum_{n=1}^{\infty}{\frac{1}{n^2}} = \frac{\pi^2}{6}\]
+%     \begin{proof}
+%         Assume $\{e^{inx}\}_{n\in \ZZ}$ is a basis for functions $f: [-\pi, \pi] \to \CC$.
+%         You can prove orthonormality with integrals but proving that it's actually a basis
+%         is kind of hard so we won't do it.
+
+
+%         \[ \sum_{n \in \ZZ}{|\angb{x, e^{inx}}|^2} = \angb{x, x} = \frac{1}{2\pi}
+%         \int_{-\pi}^{\pi}{x^2dx} = \frac{\pi^2}{3}\]
+
+%         But then 
+%     \end{proof}
+% \end{example}
+
+\section{Exercises}
+\begin{problem}
+Prove the following properties for complex numbers $z = a+bi$
+\end{problem}
+
+\begin{enumerate}
+    \item $\overline{\overline{z}}=\overline{\overline{a+bi}} = \overline{a-bi} =
+              a-(-bi) = a+bi = z$
+    \item $\overline{z+w} = \overline{a_z+b_zi+a_w+b_wi} = \overline{a_z+a_w+(b_
+                  z+b_w)i} = a_z + a_w - (b_z + b_w)i = a_z - b_zi + a_w -b_wi = \overline{z}+
+              \overline{w}$
+    \item $\overline{z \cdot w} = \overline{(a_z+b_zi)(a_w+b_wi)} = \overline{
+                  (a_za_w-b_zb_w) + (a_zb_w+b_za_w)i} = (a_za_w-b_zb_w) - (a_zb_w+b_za_w)i =
+              (a_z-b_zi)(a_w-b_wi) = \overline{z}\overline{w}$
+    \item $|z| = |a+bi| = \sqrt{a^2+b^2} = \sqrt{a^2+(-b)^2} = |a-bi| =
+              |\overline{z}|$
+    \item $\overline{z^n} = \overline{r^ne^{ni\theta}} = r^ne^{ni(-\theta)} = (re
+                  ^{i(-\theta)})^n = (\overline{z})^n$
+    \item If $f(z) = f(a+bi) = c+di$, and we want $f(\overline{z}) = \overline{f
+                  (z)}$, we can consider functions $f$ such that $f(a-bi) = c-di$ if $f(a+bi) =
+              c+di$. Instead of $f: \CC \to \CC$, let's consider $f: \RR^2 \to \RR^2$.
+          Now, we want $\overline{f(x, y)} = \overline{(a, b)} = (a, -b) = f(x, -y)$.
+          Define $f$ as $\overline{f(x, y)} = \overline{(h(x), g(y))} = (h(x), -g(y))=
+              f(x, -y) = (h(x), g(-y))$. This means that odd functions $g$ satisfy the
+          functional equation. Therefore, just define accordingly for complex numbers.
+\end{enumerate}
+
+\begin{problem}
+Let $\FF$ be a finite field. Prove that there is no inner product on $\FF^n$ over
+$\FF$.
+\end{problem}
+For $n = 1$, $\angb{0,1} = \overline{\angb{1, 0}} = 0 = \angb{1, 0}$
+
+\begin{problem}
+Let $\FF$ be an infinite field. Find three bases of $\FF^3$ that are not
+orthonormal.
+\end{problem}
+
+\begin{problem}
+Let $V$ be an $n$-dimensional inner product space and assume that $S=\{
+    \bu_1, \dots, \bu_k\}$ is a set of orthonormal vectors.
+\end{problem}
+$S$ is a linearly independent set. Assume $\bv = a_1w_1 + \dots + a_kw_k = \mathbf{0}$.
+Take the inner-product on both sides to get:
+\[\angb{\bv, a_1w_1} + \angb{\bv, a_2w_2} + \dots + \angb{\bv, a_kw_k} = \angb{\bv, \mathbf{0}} = 0\]
+\[\overline{a_1}\angb{\bv, w_1} + \dots + \overline{a_k}\angb{\bv, w_k} =
+    \overline{a_1}a_1 + \dots + \overline{a_k}a_k = 0\]
+Since for non-zero complex numbers $z$, $z\overline{z} > 0$, all of $\overline{a_i}a_i > 0$
+and $\sum_i{\overline{a_i}a_i} > 0$ if $a_i \neq 0$. Since we have a contradiction,
+$a_i = 0$. Therefore $S$ is a linearly independent set of vectors.
+
+If $k = n$, we still have $S$ a linearly independent set of vectors. Let $B$ be a basis
+for $V$. Since $B$ is a basis, it is a maximally linearly independent and
+minimally spanning set with size $n$.
+Since all maximally linearly independent sets have the same size, $S$ is also maximally
+linearly independent, which implies that it is a basis.
+
+\begin{problem}
+The norm on $V$ is defined by $\|\bv\| = \sqrt{\angb{\bv, \bv}}$.
+\end{problem}
+Because $\angb{\bv, \bv} > 0$ for non-zero $\bv$, we have $\|\bv\| =
+    \sqrt{\angb{\bv, \bv}} > 0$. Since $\angb{\mathbf{0}, \mathbf{0}} = 0$,
+$\|\mathbf{0}\| = 0$. $\|(1/\|\bv\|)\bv\|^2 = \angb{(1/\|\bv\|)\bv, (1/\|\bv\|)\bv}=
+    (1/\|\bv\|^2)\angb{\bv, \bv} = (1/\|\bv\|^2)\|\bv\|^2 = 1$. Finally, due to
+the linearity of the inner product we have $\|\alpha \bv\| =
+    \sqrt{\angb{\alpha\bv, \alpha\bv}} = \sqrt{\alpha^2\angb{\bv, \bv}} =
+    |\alpha|\|\bv\|$.
+
+
+\begin{problem}
+Apply the Gram-Schmidt process to turn $\{(1, 1, 0), (0,1,1)\}$ into
+an orthogonal basis for $\RR^3$.
+\end{problem}
+We calculate $e_1 = (\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}, 0)$ and
+$e_2 = (-\frac{\sqrt{6}}{6}, \frac{\sqrt{6}}{6}, \frac{\sqrt{6}}{3})$. Now,
+we must find another vector $e_3 = (a, b, c)$ such that $\angb{e_1, e_3} =
+    \angb{e_2, e_3} = 0$. Setting up a systems of equations and solving, we get
+$e_3 = (-b, b, -b)$. Since we want $\angb{e_3, e_3} = 1$, we set $3b^2 = 1$. We
+have $b = \pm\frac{\sqrt{3}}{3}$.
+\begin{problem}
+Let $C = AB$.
+Consider the rows of a $n \times m$ matrix $A$ to be $A = (\bv_1, \dots, \bv_n)$
+with each $\bv_i \in \FF^m$
+and the columns of a $m \times k$ matrix $B$ to be $B = (\bu_1, \dots, \bu_k)$
+with each $\bu_i \in \FF^m$.
+Show that $C(i, j) = \angb{\bv_i, \bu_j}$ if $\FF = \RR$ and $C(i, j) =
+    \angb{\bv_i, \overline{\bu_j}}$ if $\FF = \CC$.
+\end{problem}
+By the definition of matrix multiplication,
+\[c_{ij} = \sum_{\ell = 1}^m{a_{i\ell}b_{\ell j}}\]
+
+We can see that $\bv_i = (a_{i1}, \dots, a_{im})$ and $\bu_j = (b_{1j}, \dots,
+    b_{mj})$.
+
+If $\FF = \RR$, we have $\angb{\bv_i, \bu_j} = a_{i1}b_{1j} + \dots
+    + a_{im}b_{mj} = c_{ij}$
+
+If $\FF = \CC$, we have $\angb{\bv_i, \overline{\bu_j}} = \sum_{k=1}^m
+    {a_{ik}b_{kj}} = c_{ij}$
+\begin{problem}
+Check that $e_1, e_2, e_1 + e_2$ forms a frame for $\RR^2$.
+\end{problem}
+We need to find bounds $A$ and $B$ such that
+\[A(a^2 + b^2) \leq a^2 + b^2 + (a+b)^2 \leq B(a^2+b^2)\]
+\[A \leq 2 + \frac{2ab}{a^2+b^2} \leq B\]
+The minimum value of $\frac{2ab}{a^2+b^2}$ is $-1$ and the maximum value is
+$1$. This means that $A = 1$ and $B = 3$ satisfy the bounds, showing that this
+is a frame.
+\end{document}
